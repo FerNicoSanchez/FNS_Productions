@@ -18,6 +18,7 @@ nav {
     text-shadow: 0 0 10px;
     transition-property: text-shadow,font-size;
     transition-duration: 2s;
+    user-select: none;
 }
 
 .logo:hover{
@@ -51,7 +52,8 @@ nav {
 .menu-icon {
     display: none;
     font-size: 24px;
-    cursor: pointer;
+    /* cursor: pointer; */
+    user-select: none;
 }
 
 @media (max-width: 768px) {
@@ -107,6 +109,7 @@ nav {
     text-shadow: 0 0 4px;
     /* box-shadow: 0 0 1px -15px; */
     /* background-color: rgba(12, 95, 95, 0.13); */
+    user-select: none;
     background: linear-gradient(to top,rgba(192, 52, 17, 0.514),transparent);
     transition-property: color;
     transition-duration: 2s;
