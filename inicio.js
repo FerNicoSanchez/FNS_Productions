@@ -111,7 +111,7 @@ function enviarForm(evento) {
   const leyenda = document.getElementById("prueba_leyenda");
   leyenda.innerText = `Formularios enviados: ${++count_forms}`;
 
-  fetch('https://script.google.com/macros/s/AKfycby3DblfF1MVJWBJJP7meKt-OxkQ6Fh9ZVMPvZEY5F1sFDJ1lm4ql3251O5kgNms0gTvJA/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbyllOV5TIETuXr6yXq-Vz6kUGPe9Rv2Ks_UHjCXSNNmz126rq80OdNR9QwsKaEac2Q68A/exec', {
     method: 'POST',
     mode:  'no-cors',
     headers: {
