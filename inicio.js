@@ -111,6 +111,7 @@ function enviarForm(evento) {
 
   fetch("https://script.google.com/macros/s/AKfycbxLiy7iY-QioSXUVCQ3szs2KabxkpsavT6l9_cwxPWjt9RhsMZCwGBRTnNap2khLbR81Q/exec", {
     method: "POST",
+    mode:  'no-cors',
     headers: {
       "Content-Type": "application/json",
     },
