@@ -1,0 +1,166 @@
+body{
+    background-size: contain;
+    background: linear-gradient(to left,#211e,transparent);
+    margin: 0%;
+    padding: 0%;
+}
+h2{
+    color:rgb(214, 208, 202);
+    text-align: center;
+    text-shadow: 0 0 10px;
+    transition-property: text-shadow,font-size;
+    transition-duration: 2s;
+}
+
+h2:hover{
+    text-shadow: 0 0 5px red;
+    font-size: 2em;
+}
+
+h2:active{
+    color: #000;
+    background: linear-gradient(#000,#fff);
+    width: 50vw;
+    margin-left: 25vw;
+    text-shadow: 0 0 10px white;
+}
+
+#div_bienvenido{
+    box-sizing: border-box;
+    width: 50vw;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: rgb(17, 131, 131);
+    margin: auto;
+    box-shadow: 0 0 7px;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+#h4_bienvenido{
+    box-sizing: border-box;
+    border-radius: 30%;
+    color: chocolate;
+    font-family: sans-serif,Arial;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    /* text-decoration: overline underline; */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px;
+    /* box-shadow: 0 0 1px -15px; */
+    /* background-color: rgba(12, 95, 95, 0.13); */
+    background: linear-gradient(to top,rgba(192, 52, 17, 0.514),transparent);
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+#h4_bienvenido:hover{
+    color: #211e;
+}
+
+#div_bienvenido:hover{
+    background-color: #451;
+    width: 30vw;
+}
+
+
+.form_inicial{
+    border-radius: 7px;
+    border-width:medium;
+    border-style: double;
+    border-color: crimson;
+    padding: 1px 10px;
+    background: turquoise;
+    color: black;
+    margin: 2px;
+}
+
+
+.img_lp{
+    height: 100vh;
+    width: 93vW;
+    box-sizing: border-box;
+    /* filter: drop-shadow(0px 0px 5px #000); */
+    margin: 2%;
+    padding: 0%;
+    box-shadow: 0 0 20px;
+    
+}
+
+.nav{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.nav__item{
+    color: #000;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px #fff;
+    transition-property: color, background, border-radius;
+    transition-duration: 1s;
+}
+.nav__item:hover{
+    color: red;
+    border-radius: 80%;
+    background: linear-gradient(rgb(226, 172, 172),transparent)
+}
+
+#form_inicial_mensaje{
+    min-width: 300px;
+    min-height: 2em;
+}
+
+table{
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 1%;
+    color: #777;
+}
+
+#dialog{
+    border: 1px solid black;
+    border-radius: 7%;
+    margin-left: 80vw;
+    position: fixed;
+}
+
+.dialog__button{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 5px 1.2px #0000002d;
+    text-shadow: 0 0 3px #9e3e3e;
+}
+
+.boton_eliminar{
+    color: #9e3e3e;
+    box-shadow: 0 0 5px 1.2px #0000002d;
+    border-radius: 30%;
+}
+
+.boton_eliminar:hover{
+    color: #070c0373;
+    box-shadow: 0 0 5px 1.2px #0000002d;
+    border-radius: 25%;
+    
+}
+
+.td_btn_eliminar{
+    padding-left: 40px  ;
+}
+
+.fila_tabla_final:hover{
+    background: linear-gradient(rgba(255, 0, 0, 0.815),transparent);
+    color: #fff;
+    border-radius: 10%;
+}
