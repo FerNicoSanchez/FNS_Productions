@@ -4,30 +4,85 @@ body{
     margin: 0%;
     padding: 0%;
 }
-h2{
-    color:rgb(214, 208, 202);
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    color:rgb(197, 186, 175);
     text-align: center;
     text-shadow: 0 0 10px;
     transition-property: text-shadow,font-size;
     transition-duration: 2s;
 }
 
-h2:hover{
+.logo:hover{
     text-shadow: 0 0 5px red;
     font-size: 2em;
 }
 
-h2:active{
-    color: #000;
-    background: linear-gradient(#000,#fff);
-    width: 50vw;
-    margin-left: 25vw;
-    text-shadow: 0 0 10px white;
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
 
 #div_bienvenido{
     box-sizing: border-box;
     width: 50vw;
+    max-width: 60vw;
     border: 5px solid black;
     border-radius: 50%;
     background-color: rgb(17, 131, 131);
@@ -42,7 +97,7 @@ h2:active{
     border-radius: 30%;
     color: chocolate;
     font-family: sans-serif,Arial;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -63,7 +118,7 @@ h2:active{
 
 #div_bienvenido:hover{
     background-color: #451;
-    width: 30vw;
+    width: 40vw;
 }
 
 
@@ -80,7 +135,7 @@ h2:active{
 
 
 .img_lp{
-    height: 100vh;
+    max-height: 93vh;
     width: 93vW;
     box-sizing: border-box;
     /* filter: drop-shadow(0px 0px 5px #000); */
@@ -90,27 +145,7 @@ h2:active{
     
 }
 
-.nav{
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    justify-content: center;
-}
 
-.nav__item{
-    color: #000;
-    margin: 10px;
-    padding: 10px;
-    text-decoration: none;
-    text-shadow: 1px 1px 3px #fff;
-    transition-property: color, background, border-radius;
-    transition-duration: 1s;
-}
-.nav__item:hover{
-    color: red;
-    border-radius: 80%;
-    background: linear-gradient(rgb(226, 172, 172),transparent)
-}
 
 #form_inicial_mensaje{
     min-width: 300px;
@@ -129,7 +164,7 @@ fieldset{
 #dialog{
     border: 1px solid black;
     border-radius: 7%;
-    margin-left: 80vw;
+    margin-left: 70vw;
     position: fixed;
 }
 

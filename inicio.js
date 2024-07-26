@@ -8,6 +8,11 @@ function obtenerElementos() {
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
 
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
 let id = parseInt(localStorage.getItem("table_id"));
 if (!id) {
   localStorage.setItem("table_id", "0");
