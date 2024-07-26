@@ -114,16 +114,17 @@ function enviarForm(evento) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data),
+    // body: JSON.stringify(data),
+    body: `{"nombre": "Fer", "edad":"27", "tipo":"Programador","fecha":"26/07/2024"}`
   })
     .then((response) => response.json())
-    .then((data) => {
-      if (data.result === "success") {
-        alert("Datos guardados en Google Sheets.");
-      } else {
-        alert("Error al guardar los datos.");
-      }
-    })
+    // .then((data) => {
+    //   if (data.result === "success") {
+    //     alert("Datos guardados en Google Sheets.");
+    //   } else {
+    //     alert("Error al guardar los datos.");
+    //   }
+    // })
     .catch((error) => {
       alert("Error: " + error);
     });
