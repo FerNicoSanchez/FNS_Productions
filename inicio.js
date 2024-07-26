@@ -99,12 +99,6 @@ function enviarForm(evento) {
     fecha: fecha
   };
 
-  // const data = `{
-  //   "nombre": "${evento.target.nombre_form.value}",
-  //   "edad": "${evento.target.edad_form.value}",
-  //   "tipo": "${evento.target.tipo_form.value}",
-  //   "fecha": "${fecha}"
-  // }`;
   let msg = data.nombre + ", gracias por contactarte con FNS Productions! " + data.fecha;
   if (data.tipo) {
     msg += "\nTipo de contacto: " + data.tipo;
@@ -117,7 +111,7 @@ function enviarForm(evento) {
   const leyenda = document.getElementById("prueba_leyenda");
   leyenda.innerText = `Formularios enviados: ${++count_forms}`;
 
-  fetch('https://script.google.com/macros/s/AKfycbxI_kypqbL2xg92pxzd2ZPd7uo_XCyXOw-HEsAlSCm5NN671wGl4D0D8b7Zid-SsWIc0g/exec', {
+  fetch('https://script.google.com/macros/s/AKfycby3DblfF1MVJWBJJP7meKt-OxkQ6Fh9ZVMPvZEY5F1sFDJ1lm4ql3251O5kgNms0gTvJA/exec', {
     method: 'POST',
     mode:  'no-cors',
     headers: {
@@ -126,13 +120,6 @@ function enviarForm(evento) {
     body: JSON.stringify(data)
   })
     .then((response) => response.json())
-    .then((data) => {
-      if (data.result === "success") {
-        alert("Datos guardados en Google Sheets.");
-      } else {
-        alert("Error al guardar los datos.");
-      }
-    })
     .catch((error) => {
       alert("Error: " + error);
     });
