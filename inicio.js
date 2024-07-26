@@ -117,13 +117,13 @@ function enviarForm(evento) {
   const leyenda = document.getElementById("prueba_leyenda");
   leyenda.innerText = `Formularios enviados: ${++count_forms}`;
 
-  fetch('https://script.google.com/macros/s/AKfycbxLiy7iY-QioSXUVCQ3szs2KabxkpsavT6l9_cwxPWjt9RhsMZCwGBRTnNap2khLbR81Q/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbxI_kypqbL2xg92pxzd2ZPd7uo_XCyXOw-HEsAlSCm5NN671wGl4D0D8b7Zid-SsWIc0g/exec', {
     method: 'POST',
     mode:  'no-cors',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json'
     },
-    body: JSON.stringify(data),
+    body: JSON.stringify(data)
   })
     .then((response) => response.json())
     .then((data) => {
