@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="FNS Productions">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/Imagenes/foto cv.ico" alt="Imagen de LP">
+        <link rel="stylesheet" href="inicio.css">
+        <script defer src="inicio.js"></script>
+        <title>
+            FNS Productions
+        </title>
+    </head>
+    <body>
+        <header>
+            <h2 title="Holis">FNS Productions</h2>
+            <nav class="nav">
+                <a class="nav__item" href="Carpeta 2/" title="Abrir carpeta 2">Ir a carpeta 2</a>
+                <a class="nav__item" href="Carpeta 3/" title="Abrir carpeta 3">Ir a carpeta 3</a>
+                <a class="nav__item" href="http://127.0.0.1:5500/" title="Volver al inicio">Inicio</a>
+                <a class="nav__item" href="#tabla_final" title="Envianos un mensaje">Contactanos</a>
+            </nav>
+        </header>
+        <div id="div_dialog">
+            <dialog open id="dialog">
+                <p class="dialog__text">
+                    Página en producción...
+                </p>
+                <form method="dialog">
+                    <button class="dialog__button">X</button>
+                </form>
+            </dialog>
+        </div>
+        <div id="div_bienvenido">
+            <h4 id="h4_bienvenido">Bienvenido!</h4>
+        </div>
+        <div>
+            <img class="img_lp" src="Imagenes/fondolp2.jpg" >
+        </div>
+        <div class="div_form">
+            <form id="form_i">
+                <fieldset>
+                    <legend id="prueba_leyenda"> Datos Personales</legend>
+                    <input 
+                        class="form_inicial" 
+                        type="search" 
+                        title="Buscador" 
+                        name="Buscador_form" 
+                        placeholder="Buscar">
+                    <input 
+                        list="form_inicial_tipo" 
+                        placeholder="Seleccionar" 
+                        class="form_inicial" 
+                        name="tipo_form">
+                    <datalist id="form_inicial_tipo">
+                        <option>Programador</option>
+                        <option>Empleador</option>
+                        <option>Estudiante</option>
+                    </datalist>
+                    <label for="form_inicial_nombre">Nombre
+                        <input 
+                            class="form_inicial" 
+                            id="form_inicial_nombre" 
+                            type="text" 
+                            title="Ingresar nombre" 
+                            name="nombre_form"  
+                            required 
+                            placeholder="Fernando Sánchez">
+                    </label>
+                    <label for="form_inicial_edad">Edad
+                        <input 
+                            class="form_inicial" 
+                            id="form_inicial_edad" 
+                            type="number" 
+                            title="Ingresar edad" 
+                            name="edad_form" 
+                            placeholder="27" 
+                            min=1>
+                    </label>
+                    <button id="form_inicial_submit">Enviar</button>
+                </fieldset>
+            </form>
+            <fieldset>
+                <label for="form_inicial_mensaje">
+                    <textarea id="form_inicial_mensaje" placeholder="Escriba el mensaje..." rows="1" class="form_inicial"></textarea>
+                </label>
+                <a href="mailto:fernandonicolasanchez@gmail.com">Enviar</a>
+            </fieldset>
+            <table id="tabla_final">
+                <thead>
+                    <p> Datos Ingresados</p>
+                    <tr class="fila_tabla_final">
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Tipo de Contacto</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
