@@ -92,19 +92,19 @@ function enviarForm(evento) {
   evento.preventDefault();
   let fecha = new Date().toLocaleDateString("es-AR");
   
-  // const data = {
-  //   nombre: evento.target.nombre_form.value,
-  //   edad: evento.target.edad_form.value,
-  //   tipo: evento.target.tipo_form.value,
-  //   fecha: fecha
-  // };
+  const data = {
+    nombre: evento.target.nombre_form.value,
+    edad: evento.target.edad_form.value,
+    tipo: evento.target.tipo_form.value,
+    fecha: fecha
+  };
 
-  const data = `{
-    "nombre": "${evento.target.nombre_form.value}",
-    "edad": "${evento.target.edad_form.value}",
-    "tipo": "${evento.target.tipo_form.value}",
-    "fecha": "${fecha}"
-  }`;
+  // const data = `{
+  //   "nombre": "${evento.target.nombre_form.value}",
+  //   "edad": "${evento.target.edad_form.value}",
+  //   "tipo": "${evento.target.tipo_form.value}",
+  //   "fecha": "${fecha}"
+  // }`;
   let msg = data.nombre + ", gracias por contactarte con FNS Productions! " + data.fecha;
   if (data.tipo) {
     msg += "\nTipo de contacto: " + data.tipo;
@@ -123,7 +123,7 @@ function enviarForm(evento) {
     headers: {
       "Content-Type": "application/json"
     },
-    body: data
+    body: JSON.stringify(data)
   })
     .then((response) => response.json())
     .then((data) => {
