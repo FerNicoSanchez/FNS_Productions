@@ -115,8 +115,7 @@ function enviarForm(evento) {
     headers: {
       "Content-Type": "application/json",
     },
-    // body: JSON.stringify(data),
-    body: `{"nombre": "Fer", "edad":"27", "tipo":"Programador","fecha":"26/07/2024"}`
+    body: JSON.stringify(data),
   })
     .then((response) => response.json())
     .then((data) => {
