@@ -1,10 +1,12 @@
 body{
-    background-size: contain;
-    background: linear-gradient(to left,#211e,transparent);
+    background: url(/Imagenes/Proyectos2.jpeg);
+    background-size: cover;
+    background-position: right;
     margin: 0%;
     padding: 0%;
 }
 
+/* ----------- Header - Menu ------------- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -81,13 +83,18 @@ nav {
     }
 }
 
+/* ----------- FIN Header - Menu ------------- */
+
+/* ---------------- Section 1 --------------- */
+
+
 #div_bienvenido{
     box-sizing: border-box;
     width: 50vw;
     max-width: 60vw;
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 50%;
-    background-color: rgb(17, 131, 131);
+    background-color: rgba(17, 131, 131, 0.281);
     margin: auto;
     box-shadow: 0 0 7px;
     transition-property: width;
@@ -107,7 +114,6 @@ nav {
     text-transform: uppercase;
     text-shadow: 0 0 4px;
     user-select: none;
-    background: linear-gradient(to top,rgba(192, 52, 17, 0.514),transparent);
     transition-property: color;
     transition-duration: 2s;
 }
@@ -117,12 +123,55 @@ nav {
 }
 
 #div_bienvenido:hover{
-    background-color: #451;
+    background-color: rgba(68, 85, 17, 0.123);
     width: 40vw;
 }
 
 
+#container__section-1{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.overlay-text {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, -50%);
+    color: rgba(253, 235, 235, 0.753);
+    font-size: medium;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.637);
+    pointer-events: none; /* Permite que los clics pasen a la imagen */
+    text-wrap: balance;
+}
+
+/* ---------------- Fin Section 1 --------------- */
+
+
 .form_inicial{
+    padding-top: 5px;
     border-radius: 7px;
     border-width:medium;
     border-style: double;
@@ -138,19 +187,8 @@ nav {
     box-shadow: 0 0 10px #000;
 }
 
-
-.img_lp{
-    max-height: 93vh;
-    width: 93vW;
-    box-sizing: border-box;
-    margin: 2%;
-    padding: 0%;
-    box-shadow: 0 0 20px;
-    
-}
-
 table{
-    text-align: center;
+    margin: auto;
 }
 
 fieldset{
@@ -160,9 +198,14 @@ fieldset{
 
 #dialog{
     border: 1px solid black;
-    border-radius: 7%;
-    margin-left: 70vw;
+    border-radius: 10%;
+    right: 0;
     position: fixed;
+    background-color: #0000004f;
+    max-height: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .dialog__button{
@@ -231,11 +274,12 @@ label {
 #form_inicial_submit{
     width: 150px;
     border-radius: 15%;
-    background-color: transparent
+    background-color: #07040450;
+    color:#ffffffbe;
 }
 
 #form_inicial_submit:hover{
-    color: #9e3e3e;
+    color: #be9393;
     box-shadow: 0 0 0px 1px #9e3e3e;
 }
 

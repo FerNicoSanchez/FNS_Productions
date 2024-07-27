@@ -4,6 +4,7 @@ function obtenerElementos() {
     localStorage.setItem("datos_ingresados", JSON.stringify([]));
   } else {
     cargarTabla(datos);
+    leerGoogleSheets();
   }
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
@@ -129,6 +130,23 @@ function enviarForm(evento) {
       alert("Error: " + error);
     });
 };
+
+function leerGoogleSheets(){
+    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSnNrEoQx1wB03wSCIl4_GiiuQUS4jWKFCbvHJORuCxuxRD4HZ6Ocp7Ln1hBJAtOZva0MhX2KpCALlG/pub?gid=0&single=true&output=csv')
+    .then(response => response.text())
+    .then(data => {
+        const rows = data.split('\n');
+        const jsonData = rows.map(row => {
+            const columns = row.split(',');
+            return columns;
+        });
+        console.log(jsonData);
+        // jsonData.forEach(fila => {
+        //   agregarFila(fila[1],fila[2],fila[3],fila[4]);
+        // })
+    })
+    .catch(error => console.error('Error fetching data:', error));
+  };
 
 const form = document.getElementById("form_i");
 
