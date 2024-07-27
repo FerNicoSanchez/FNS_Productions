@@ -9,6 +9,9 @@ function obtenerElementos() {
     if(!datos.length){
       document.querySelector("table").classList.add("hidden");
     }
+    else{
+      document.querySelector("table").classList.remove("hidden");
+    }
   }
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
