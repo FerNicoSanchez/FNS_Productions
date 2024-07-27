@@ -6,7 +6,7 @@ function obtenerElementos() {
   } else {
     cargarTabla(datos);
     leerGoogleSheets();
-    if(datos.length){
+    if(!datos.length){
       document.querySelector("table").classList.add("hidden");
     }
   }
