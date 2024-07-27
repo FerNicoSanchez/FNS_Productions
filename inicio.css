@@ -169,6 +169,9 @@ nav {
 
 /* ---------------- Fin Section 1 --------------- */
 
+.hidden {
+    display: none;
+}
 
 .form_inicial{
     padding-top: 5px;

@@ -2,9 +2,13 @@ function obtenerElementos() {
   let datos = localStorage.getItem("datos_ingresados");
   if (!datos) {
     localStorage.setItem("datos_ingresados", JSON.stringify([]));
+    document.querySelector("table").classList.add("hidden");
   } else {
     cargarTabla(datos);
     leerGoogleSheets();
+    if(datos.length){
+      document.querySelector("table").classList.add("hidden");
+    }
   }
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
@@ -55,6 +59,7 @@ function agregarFila(nombre, edad, tipo, fecha) {
   };
   datosTabla.push(datosFila);
   localStorage.setItem("datos_ingresados", JSON.stringify(datosTabla));
+  tabla_final.classList.remove("hidden");
 }
 
 function eliminarFila(id) {
@@ -68,6 +73,9 @@ function eliminarFila(id) {
     }
   }
   localStorage.setItem("datos_ingresados", JSON.stringify(datosTabla));
+  if(!datosTabla.length){
+    document.querySelector("table").classList.add("hidden");
+  }
 }
 
 function cargarTabla(datos) {
