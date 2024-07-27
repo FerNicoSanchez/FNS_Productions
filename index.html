@@ -1,144 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="author" content="FNS Productions">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/Imagenes/foto cv.ico" alt="Imagen de LP">
-        <link rel="stylesheet" href="inicio.css">
-        <script defer src="inicio.js"></script>
-        <title>
-            FNS Productions
-        </title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">FNS Productions</div>
-                <ul class="nav-links">
-                    <li><a href="https://fernicosanchez.github.io/FNS_Productions/" title="Volver al inicio"> Inicio </a></li>
-                    <li><a href="Carpeta 2/" title="Abrir carpeta 2">   Carpeta 2   </a></li>
-                    <li><a href="Carpeta 3/" title="Abrir carpeta 3">   Carpeta 3   </a></li>
-                    <li><a href="#tabla_final">                         Contáctame  </a></li>
-                </ul>
-                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            </nav>
-        </header>
-        <div id="div_dialog">
-            <dialog open id="dialog">
-                <p class="dialog__text">
-                    Página en producción...
-                </p>
-                <form method="dialog">
-                    <button class="dialog__button">X</button>
-                </form>
-            </dialog>
-        </div>
-        <div id="div_bienvenido">
-            <h4 id="h4_bienvenido">Bienvenido!</h4>
-        </div>
-        <div>
-            <img class="img_lp" src="Imagenes/fondolp2.jpg" >
-        </div>
-        <div class="div_form">
-            <form id="form_i">
-                <fieldset>
-                    <legend id="prueba_leyenda"> Datos Personales</legend>
-                    <input 
-                        class="form_inicial" 
-                        type="search" 
-                        title="Buscador" 
-                        name="Buscador_form" 
-                        placeholder="Buscar">
-                    <input 
-                        list="form_inicial_tipo" 
-                        placeholder="Seleccionar" 
-                        class="form_inicial" 
-                        name="tipo_form">
-                    <datalist id="form_inicial_tipo">
-                        <option>Programador</option>
-                        <option>Empleador</option>
-                        <option>Estudiante</option>
-                        <option>Otro</option>
-                    </datalist>
-                    <label for="form_inicial_nombre">Nombre
-                        <input 
-                            class="form_inicial" 
-                            id="form_inicial_nombre" 
-                            type="text" 
-                            title="Ingresar nombre" 
-                            name="nombre_form"  
-                            required 
-                            placeholder="Fernando Sánchez">
-                    </label>
-                    <label for="form_inicial_edad">Edad
-                        <input 
-                            class="form_inicial" 
-                            id="form_inicial_edad" 
-                            type="number" 
-                            title="Ingresar edad" 
-                            name="edad_form" 
-                            placeholder="27" 
-                            min=1>
-                    </label>
-                    <button id="form_inicial_submit">Enviar</button>
-                </fieldset>
-            </form>
-            <table id="tabla_final">
-                <thead>
-                    <p> Datos Ingresados</p>
-                    <tr class="fila_tabla_final">
-                        <th>Nombre</th>
-                        <th>Edad</th>
-                        <th>Tipo de Contacto</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-        <div class="form-card1">
-            <div class="form-card2">
-              <form class="form">
-                <p class="form-heading">Get In Touch</p>
-          
-                <div class="form-field">
-                  <input required="" placeholder="Name" class="input-field" type="text" />
-                </div>
-          
-                <div class="form-field">
-                  <input
-                    required=""
-                    placeholder="Email"
-                    class="input-field"
-                    type="email"
-                  />
-                </div>
-          
-                <div class="form-field">
-                  <input
-                    required=""
-                    placeholder="Subject"
-                    class="input-field"
-                    type="text"
-                  />
-                </div>
-          
-                <div class="form-field">
-                  <textarea
-                    required=""
-                    placeholder="Message"
-                    cols="30"
-                    rows="3"
-                    class="input-field"
-                  ></textarea>
-                </div>
-          
-                <button class="sendMessage-btn">Send Message</button>
-              </form>
-            </div>
-          </div>
-          
-    </body>
+<head>
+	<meta name="author" content="FNS Productions" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="/Imagenes/foto cv.ico" alt="Imagen de LP" />
+	<link rel="stylesheet" href="inicio.css" />
+	<script defer src="inicio.js"></script>
+	<title>FNS Productions</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">FNS Productions</div>
+			<ul class="nav-links">
+			<li>
+				<a
+					href="https://fernicosanchez.github.io/FNS_Productions/"
+					title="Volver al inicio"
+					>
+					Inicio
+				</a>
+			</li>
+			<li><a href="Carpeta 2/" title="Abrir carpeta 2"> Carpeta 2 </a></li>
+			<li><a href="Carpeta 3/" title="Abrir carpeta 3"> Carpeta 3 </a></li>
+			<li><a href="#tabla_final"> Contáctame </a></li>
+			</ul>
+			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+		</nav>
+	</header>
+	<section id="section_1">
+			<div id="div_dialog">
+			<dialog open id="dialog">
+				<p class="dialog__text">Página en producción...</p>
+				<form method="dialog">
+				<button class="dialog__button">X</button>
+				</form>
+			</dialog>
+			</div>
+			<div id="div_bienvenido">
+			<h4 id="h4_bienvenido">Bienvenido!</h4>
+			</div>
+			<div>
+			<img class="img_lp" src="Imagenes/fondolp2.jpg" />
+			</div>
+	</section>
+	<section id="section_2">
+		<form id="form_i">
+			<fieldset id="fieldset_form">
+				<p id="prueba_leyenda">Datos Personales</p>
+				<div class="div_form">
+					<label for="form_inicial_tipo">Tipo de contacto
+					<input
+						id="form_inicial_tipo"
+						list="form_inicial_tipo"
+						placeholder="Seleccionar"
+						class="form_inicial"
+						name="tipo_form"
+					/>
+					<datalist id="form_inicial_tipo">
+						<option>Programador</option>
+						<option>Empleador</option>
+						<option>Estudiante</option>
+						<option>Otro</option>
+					</datalist>
+					</label>
+				</div>
+			<div class="div_form">
+				<label for="form_inicial_nombre">Nombre
+				<input
+					class="form_inicial"
+					id="form_inicial_nombre"
+					type="text"
+					title="Ingresar nombre"
+					name="nombre_form"
+					required
+					placeholder="Fernando Sánchez"
+				/>
+				</label>
+			</div>
+			<div class="div_form">
+				<label for="form_inicial_edad">Edad
+				<input
+					class="form_inicial"
+					id="form_inicial_edad"
+					type="number"
+					title="Ingresar edad"
+					name="edad_form"
+					placeholder="27"
+					min="1"
+				/>
+				</label>
+			</div>
+			<div class="div_form">
+				<button id="form_inicial_submit">Enviar</button>
+			</div>
+		</fieldset>
+	</form>
+	<table id="tabla_final">
+		<thead>
+			<p id="p_tabla">Datos Ingresados</p>
+			<tr class="fila_tabla_final">
+				<th>Nombre</th>
+				<th>Edad</th>
+				<th>Tipo de Contacto</th>
+				<th>Fecha</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	</section>
+</body>
 </html>

@@ -103,12 +103,9 @@ nav {
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    /* text-decoration: overline underline; */
     letter-spacing: 3px;
     text-transform: uppercase;
     text-shadow: 0 0 4px;
-    /* box-shadow: 0 0 1px -15px; */
-    /* background-color: rgba(12, 95, 95, 0.13); */
     user-select: none;
     background: linear-gradient(to top,rgba(192, 52, 17, 0.514),transparent);
     transition-property: color;
@@ -130,10 +127,15 @@ nav {
     border-width:medium;
     border-style: double;
     border-color: crimson;
-    padding: 1px 10px;
+    padding: 1px 100px 0 5px;
     background: turquoise;
     color: black;
     margin: 2px;
+    text-align: left;
+}
+
+.form_inicial:hover{
+    box-shadow: 0 0 10px #000;
 }
 
 
@@ -141,7 +143,6 @@ nav {
     max-height: 93vh;
     width: 93vW;
     box-sizing: border-box;
-    /* filter: drop-shadow(0px 0px 5px #000); */
     margin: 2%;
     padding: 0%;
     box-shadow: 0 0 20px;
@@ -196,90 +197,51 @@ fieldset{
     border-radius: 10%;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    font-family: inherit;
-    gap: 10px;
-    padding-inline: 2em;
-    padding-bottom: 0.4em;
-    background-color: #171717;
-    //background-color: #0a192f;
-    border-radius: 20px;
-  }
-  
-  .form-heading {
-    text-align: center;
-    margin: 2em;
-    color: #64ffda;
-    font-size: 1.2em;
-    background-color: transparent;
-    align-self: center;
-  }
-  
-  .form-field {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    border-radius: 10px;
-    padding: 0.6em;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: #171717;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  }
-  
-  .input-field {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    color: #ccd6f6;
-    padding-inline: 1em;
-  }
-  
-  .sendMessage-btn {
-    cursor: pointer;
-    margin-bottom: 3em;
-    padding: 1em;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: #64ffda;
-    font-weight: bold;
-    outline: 1px solid #64ffda;
-    transition: all ease-in-out 0.3s;
-  }
-  
-  .sendMessage-btn:hover {
-    transition: all ease-in-out 0.3s;
-    background-color: #64ffda;
+label {
     color: #000;
-    cursor: pointer;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  }
-  
-  .form-card1 {
-    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
-    border-radius: 22px;
-    transition: all 0.3s;
-  }
-  
-  .form-card1:hover {
-    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
-  }
-  
-  .form-card2 {
-    border-radius: 0;
-    transition: all 0.2s;
-  }
-  
-  .form-card2:hover {
-    transform: scale(0.98);
-    border-radius: 20px;
-  }
-  
+    width: 100%;
+    height: auto;
+}
+
+#fieldset_form:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 1px #080808;
+}
+
+#prueba_leyenda {
+    color: #000;
+    text-shadow: 0 0 2px ;
+}
+
+.div_form {
+    display: grid;
+    grid-template-columns:min-content;
+    justify-content: left;
+}
+
+
+@media (max-width: 600px) {
+    .div_form {
+        display: grid;
+        grid-template-columns:min-content;
+        justify-content: center;
+    }
+}
+
+#form_inicial_submit{
+    width: 150px;
+    border-radius: 15%;
+    background-color: transparent
+}
+
+#form_inicial_submit:hover{
+    color: #9e3e3e;
+    box-shadow: 0 0 0px 1px #9e3e3e;
+}
+
+#p_tabla {
+    text-align: center;
+    color: #070404;
+    text-shadow: 0 0 3px rgb(31, 9, 9);
+    font-weight: 900;
+}
