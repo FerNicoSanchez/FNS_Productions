@@ -13,6 +13,13 @@ function obtenerElementos() {
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
 
+if (performance.navigation.type == 1) {
+  let datos = localStorage.getItem("datos_ingresados");
+  if(!datos){
+    document.querySelector("table").classList.add("hidden");
+  }
+}
+
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
   navLinks.classList.toggle('active');
