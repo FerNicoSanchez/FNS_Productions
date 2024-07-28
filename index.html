@@ -37,95 +37,97 @@
 			</dialog>
 			</div>
 	</header>
-	<section id="section_1">
-			<div id="div_bienvenido">
-			<h4 id="h4_bienvenido">Bienvenido!</h4>
-			</div>
-			<div id="container__section-1">
-				<div id="div-1_section_1" class="div_section">
-					<a href="#" class="image-container">
-						<img class="image-container" src="Imagenes/estudios2_portfolio.jpeg" />
-						<div class="overlay-text">Estudios</div>
-					</a>
+	<main>
+		<section id="section_1">
+				<div id="div_bienvenido">
+				<h4 id="h4_bienvenido">Bienvenido!</h4>
 				</div>
-				<div id="div-2_section_1" class="div_section ">
-					<a href="#" class="image-container">
-						<img class="image-container" src="Imagenes/ExpLaboral1.jpeg" />
-						<div class="overlay-text">Experiencia Laboral</div>
-					</a>
+				<div id="container__section-1">
+					<div id="div-1_section_1" class="div_section">
+						<a href="#" class="image-container">
+							<img class="image-container" src="Imagenes/estudios2_portfolio.jpeg" />
+							<div class="overlay-text">Estudios</div>
+						</a>
+					</div>
+					<div id="div-2_section_1" class="div_section ">
+						<a href="#" class="image-container">
+							<img class="image-container" src="Imagenes/ExpLaboral1.jpeg" />
+							<div class="overlay-text">Experiencia Laboral</div>
+						</a>
+					</div>
+					<div id="div-3_section_1" class="div_section">
+						<a href="#" class="image-container">
+							<img class="image-container" src="Imagenes/Proyectos1.jpeg" />
+							<div class="overlay-text">Proyectos</div>
+						</a>
+					</div>
 				</div>
-				<div id="div-3_section_1" class="div_section">
-					<a href="#" class="image-container">
-						<img class="image-container" src="Imagenes/Proyectos1.jpeg" />
-						<div class="overlay-text">Proyectos</div>
-					</a>
-				</div>
-			</div>
-	</section>
-	<section id="section_2">
-		<form id="form_i">
-			<fieldset id="fieldset_form">
-				<p id="prueba_leyenda">Datos Personales</p>
+		</section>
+		<section id="section_2">
+			<form id="form_i">
+				<fieldset id="fieldset_form">
+					<p id="prueba_leyenda">Datos Personales</p>
+					<div class="div_form">
+						<label for="form_inicial_tipo">Tipo de contacto
+						<input
+							id="form_inicial_tipo"
+							list="form_inicial_tipo"
+							placeholder="Seleccionar"
+							class="form_inicial"
+							name="tipo_form"
+						/>
+						<datalist id="form_inicial_tipo">
+							<option>Programador</option>
+							<option>Empleador</option>
+							<option>Estudiante</option>
+							<option>Otro</option>
+						</datalist>
+						</label>
+					</div>
 				<div class="div_form">
-					<label for="form_inicial_tipo">Tipo de contacto
+					<label for="form_inicial_nombre">Nombre
 					<input
-						id="form_inicial_tipo"
-						list="form_inicial_tipo"
-						placeholder="Seleccionar"
 						class="form_inicial"
-						name="tipo_form"
+						id="form_inicial_nombre"
+						type="text"
+						title="Ingresar nombre"
+						name="nombre_form"
+						required
+						placeholder="Fernando Sánchez"
 					/>
-					<datalist id="form_inicial_tipo">
-						<option>Programador</option>
-						<option>Empleador</option>
-						<option>Estudiante</option>
-						<option>Otro</option>
-					</datalist>
 					</label>
 				</div>
-			<div class="div_form">
-				<label for="form_inicial_nombre">Nombre
-				<input
-					class="form_inicial"
-					id="form_inicial_nombre"
-					type="text"
-					title="Ingresar nombre"
-					name="nombre_form"
-					required
-					placeholder="Fernando Sánchez"
-				/>
-				</label>
-			</div>
-			<div class="div_form">
-				<label for="form_inicial_edad">Edad
-				<input
-					class="form_inicial"
-					id="form_inicial_edad"
-					type="number"
-					title="Ingresar edad"
-					name="edad_form"
-					placeholder="27"
-					min="1"
-				/>
-				</label>
-			</div>
-			<div class="div_form">
-				<button id="form_inicial_submit">Enviar</button>
-			</div>
-		</fieldset>
-	</form>
-	<table id="tabla_final">
-		<thead>
-			<p id="p_tabla">Datos Ingresados</p>
-			<tr class="fila_tabla_final">
-				<th>Nombre</th>
-				<th>Edad</th>
-				<th>Tipo de Contacto</th>
-				<th>Fecha</th>
-			</tr>
-		</thead>
-		<tbody></tbody>
-	</table>
-	</section>
+				<div class="div_form">
+					<label for="form_inicial_edad">Edad
+					<input
+						class="form_inicial"
+						id="form_inicial_edad"
+						type="number"
+						title="Ingresar edad"
+						name="edad_form"
+						placeholder="27"
+						min="1"
+					/>
+					</label>
+				</div>
+				<div class="div_form">
+					<button id="form_inicial_submit">Enviar</button>
+				</div>
+			</fieldset>
+		</form>
+		<table id="tabla_final">
+			<thead>
+				<p id="p_tabla">Datos Ingresados</p>
+				<tr class="fila_tabla_final">
+					<th>Nombre</th>
+					<th>Edad</th>
+					<th>Tipo de Contacto</th>
+					<th>Fecha</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		</section>
+	</main>
 </body>
 </html>

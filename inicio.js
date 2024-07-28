@@ -4,13 +4,13 @@ function obtenerElementos() {
     localStorage.setItem("datos_ingresados", JSON.stringify([]));
     document.querySelector("table").classList.add("hidden");
   } else {
-    cargarTabla(datos);
-    leerGoogleSheets();
     if(!datos.length){
       document.querySelector("table").classList.add("hidden");
     }
     else{
       document.querySelector("table").classList.remove("hidden");
+      cargarTabla(datos);
+      leerGoogleSheets();
     }
   }
 }
