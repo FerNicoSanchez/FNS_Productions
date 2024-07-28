@@ -16,7 +16,7 @@ addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM eje
 if (performance.navigation.type == 1) {
   let datos = localStorage.getItem("datos_ingresados");
   if(!datos){
-    document.querySelector("table").classList.add("hidden");
+    document.getElementById("tabla_final").classList.add("hidden");
   }
 }
 
