@@ -163,6 +163,14 @@ function leerGoogleSheets(){
     .catch(error => console.error('Error fetching data:', error));
   };
 
+
 const form = document.getElementById("form_i");
+
+const img_expLaboral = document.getElementById("image__expLaboral");
+
+img_expLaboral.addEventListener("click", () => {
+  const dialog = document.getElementById("dialog");
+  dialog.showModal();
+})
 
 form.addEventListener("submit", enviarForm);

@@ -203,30 +203,32 @@ fieldset{
 }
 
 #dialog{
+    /* display:none; */
     border: 1px solid black;
     border-radius: 10%;
     right: 0;
     position: fixed;
     background-color: #0000004f;
-    max-height: 25px;
+    max-height: 500px;
     align-items: center;
     text-align: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .dialog__button{
     color: red;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     box-shadow: 0 0 5px 1.2px #0000002d;
     text-shadow: 0 0 3px #9e3e3e;
+    border-radius: 30%;
 }
 
 .boton_eliminar{
     color: #9e3e3e;
     box-shadow: 0 0 5px 1.2px #0000002d;
-    border-radius: 30%;
 }
 
 .boton_eliminar:hover{
