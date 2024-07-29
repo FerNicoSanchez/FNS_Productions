@@ -3,15 +3,12 @@ function obtenerElementos() {
   if (!datos) {
     localStorage.setItem("datos_ingresados", JSON.stringify([]));
     document.querySelector("table").classList.add("hidden");
+  } else if(!datos.length){
+      document.querySelector("table").classList.add("hidden");
   } else {
+    document.querySelector("table").classList.remove("hidden");
     cargarTabla(datos);
     leerGoogleSheets();
-    if(!datos.length){
-      document.querySelector("table").classList.add("hidden");
-    }
-    else{
-      document.querySelector("table").classList.remove("hidden");
-    }
   }
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
