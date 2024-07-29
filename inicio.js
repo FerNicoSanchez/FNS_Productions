@@ -3,15 +3,22 @@ function obtenerElementos() {
   if (!datos) {
     localStorage.setItem("datos_ingresados", JSON.stringify([]));
     document.querySelector("table").classList.add("hidden");
-  } else if(!datos.length){
+  } else if(datos.length === 0){
       document.querySelector("table").classList.add("hidden");
-  } else {
-    document.querySelector("table").classList.remove("hidden");
-    cargarTabla(datos);
-    leerGoogleSheets();
+  } else{
+      document.querySelector("table").classList.remove("hidden");
+      cargarTabla(datos);
+      leerGoogleSheets();
   }
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
+
+if (performance.navigation.type == 1) {
+  let datos = localStorage.getItem("datos_ingresados");
+  if(!datos){
+    document.getElementById("tabla_final").classList.add("hidden");
+  }
+}
 
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');

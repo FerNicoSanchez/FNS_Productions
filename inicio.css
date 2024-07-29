@@ -173,7 +173,7 @@ nav {
 /* ---------------- Fin Section 1 --------------- */
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .form_inicial{
