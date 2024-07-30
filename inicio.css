@@ -6,6 +6,22 @@ body{
     padding: 0%;
 }
 
+#div-1_section_1 {
+    /* width: 20px; */
+    height: 1200px;
+}
+
+#section_1 {
+    max-width: 90%;
+    max-height: 80%;
+    background: url(/Imagenes/foto_ig_campera.jpg);
+    background-size: cover;
+    background-position: right;
+    /* background-attachment: fixed; */
+    margin: auto;
+    border-radius: 50%;
+}
+
 /* ----------- Header - Menu ------------- */
 nav {
     display: flex;
@@ -94,11 +110,12 @@ nav {
 #div_bienvenido{
     box-sizing: border-box;
     width: 50vw;
-    max-width: 60vw;
+    max-width: 50vw;
     border: 3px solid black;
     border-radius: 50%;
     background-color: rgba(17, 131, 131, 0.281);
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 20vw;
     box-shadow: 0 0 7px;
     transition-property: width;
     transition-duration: 2s;
@@ -131,7 +148,7 @@ nav {
 }
 
 
-#container__section-1{
+#container__section-2{
     margin-left: 5%;
     display: flex;
     flex-direction: row;
