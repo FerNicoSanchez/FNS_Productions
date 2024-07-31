@@ -98,23 +98,56 @@ nav {
 #section_1 {
     display: flex;
     flex-direction: row;
-    background: url(/Imagenes/foto_ig_campera.jpg);
-    background-size: cover;
-    background-position: right;
+    background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/foto_ig_azul.jpg);
+    background-size: contain;
+    /* background-position: right; */
     /* background-attachment: fixed; */
+    background-repeat: no-repeat;
     margin: auto;
     border-radius: 50%;
+    position: relative;
 }
+
 
 #div-1_section_1 {
     /* width: 20px; */
     height: 1000px;
 }
 
-#div_parrafo_section_1 {
+#p_section-1{
+    background-color: #00000098;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
+    border-radius: 0 5% 5% 0;
+    font-size: 24px;
     font-weight: 700;
-    color: rgba(53, 46, 46, 0.856);
+    margin-left: clamp(40%,45%,50%);
+    margin-right: clamp(10vw,11vw,12vw);
+    margin-top: 5%;
+    padding: 1%;
+    color: rgba(163, 153, 153, 0.897);
+    position: relative;
+    transform: perspective(700px) rotateY(-30deg);
+    transition: 2s;
 }
+
+#p_section-1:hover {
+    transform: rotateY(0);
+}
+
+#p_section-1::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 35px;
+    height: 15px;
+    top: -15px;
+    left: 0;
+    border-top-right-radius: 100%;
+    /* box-shadow: -4px 4px 0 -4px rgb(0, 0, 0); */
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.418);
+
+}
+
 
 #div_bienvenido{
     box-sizing: border-box;
