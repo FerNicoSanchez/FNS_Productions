@@ -22,13 +22,12 @@ nav {
     color:rgb(197, 186, 175);
     text-align: center;
     text-shadow: 0 0 10px;
-    transition-property: text-shadow,font-size;
     transition-duration: 2s;
     user-select: none;
 }
 
 .logo:hover{
-    text-shadow: 0 0 5px red;
+    text-shadow: 0 0 4px red;
     font-size: 2em;
 }
 
@@ -47,7 +46,7 @@ nav {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background-color 0.5s;
+    transition: .7s;
 }
 
 .nav-links a:hover {
@@ -100,7 +99,6 @@ nav {
     flex-direction: row;
     background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/foto_ig_azul.jpg);
     background-size: contain;
-    /* background-position: right; */
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     margin: auto;
@@ -111,7 +109,7 @@ nav {
 
 #div-1_section_1 {
     /* width: 20px; */
-    height: 1000px;
+    height: 900px;
 }
 
 #p_section-1{
@@ -127,7 +125,7 @@ nav {
     color: rgba(163, 153, 153, 0.897);
     position: relative;
     transform: perspective(700px) rotateY(-30deg);
-    transition: 2s;
+    transition: 2.5s;
 }
 
 #p_section-1:hover {
