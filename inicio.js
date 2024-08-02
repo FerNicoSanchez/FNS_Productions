@@ -120,7 +120,7 @@ function enviarForm(evento) {
     fecha: fecha
   };
 
-  let msg = data.nombre + ", gracias por contactarte con FNS Productions! " + data.fecha;
+  let msg = data.nombre + ", gracias por contactarte con FNS Productions! ";
   if (data.tipo) {
     msg += "\nTipo de contacto: " + data.tipo;
   }

@@ -1,7 +1,8 @@
 body{
     background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/Proyectos2.jpeg);
     background-size: cover;
-    background-position: right;
+    background-position: left;
+    background-attachment: fixed;
     margin: 0%;
     padding: 0%;
 }
@@ -91,99 +92,91 @@ nav {
 
 /* ----------- FIN Header - Menu ------------- */
 
+
+
 /* ---------------- Section 1 --------------- */
 
+.dialog__button{
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 0 5px 1.2px #0000002d;
+    text-shadow: 0 0 3px #9e3e3e;
+    border-radius: 30%;
+}
+
+#dialog{
+    /* display:none; */
+    border: 1px solid black;
+    border-radius: 10%;
+    right: 0;
+    position: fixed;
+    background-color: #0000004f;
+    max-height: 500px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 100;
+}
 
 #section_1 {
     display: flex;
     flex-direction: row;
-    background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/foto_ig_azul.jpg);
+    background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/foto_ig_campera.jpg);
     background-size: contain;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     margin: auto;
+    margin-left: 3%;
     border-radius: 50%;
     position: relative;
 }
 
 
 #div-1_section_1 {
-    /* width: 20px; */
-    height: 900px;
+    height: 700px;
 }
 
 #p_section-1{
-    background-color: #00000098;
+    background-color: #0000005b;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
-    border-radius: 0 5% 5% 0;
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: clamp(40%,45%,50%);
-    margin-right: clamp(10vw,11vw,12vw);
-    margin-top: 5%;
-    padding: 1%;
-    color: rgba(163, 153, 153, 0.897);
-    position: relative;
-    transform: perspective(700px) rotateY(-30deg);
-    transition: 2.5s;
-}
-
-#p_section-1:hover {
-    transform: rotateY(0);
-}
-
-#p_section-1::before{
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.418);
-    width: 35px;
-    height: 15px;
-    top: -15px;
-    left: 0;
-    border-top-right-radius: 100%;
-    /* box-shadow: -4px 4px 0 -4px rgb(0, 0, 0); */
-    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.418);
-
+    border-radius: 25%;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-top: 30vh;
+    padding: 5%;
 }
 
 
-#div_bienvenido{
-    box-sizing: border-box;
-    width: 50vw;
-    max-width: 50vw;
-    border: 3px solid black;
-    border-radius: 50%;
-    background-color: rgba(17, 131, 131, 0.281);
-    margin-left: 20vw;
-    box-shadow: 0 0 7px;
-    transition-property: width;
-    transition-duration: 2s;
-}
+@media (min-width: 780px) {
+    #div-1_section_1 {
+        min-height: 900px;
+    }
 
-#h4_bienvenido{
-    box-sizing: border-box;
-    border-radius: 30%;
-    color: chocolate;
-    font-family: sans-serif,Arial;
-    font-size: 28px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-shadow: 0 0 4px;
-    user-select: none;
-    transition-property: color;
-    transition-duration: 2s;
-}
-
-#h4_bienvenido:hover{
-    color: #211e;
-}
-
-#div_bienvenido:hover{
-    background-color: rgba(68, 85, 17, 0.123);
-    width: 40vw;
+    #p_section-1{
+        background-color: #00000098;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
+        border-radius: 5% 5% 5% 5%;
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: clamp(41%,46%,49%);
+        margin-right: clamp(10vw,11vw,12vw);
+        margin-top: 10%;
+        padding: 2%;
+        color: rgb(255, 255, 255);
+        position: relative;
+        transform: perspective(700px) rotateY(-30deg);
+        transition: 2.5s;
+    }
+    
+    #p_section-1:hover {
+        /* background-color: #ffffffb0;
+        color: rgb(0, 0, 0); */
+        transform: rotateY(0);
+        border-radius: 0 5% 5% 0;
+    }
 }
 
 
@@ -226,8 +219,9 @@ nav {
     text-wrap: balance;
 }
 
-/* ---------------- Fin Section 1 --------------- */
+/* ---------------------- Fin Section 1 ------------------------- */
 
+/* ----------------------- Formulario -----------------------------*/
 
 .form_inicial{
     padding-top: 5px;
@@ -246,38 +240,12 @@ nav {
     box-shadow: 0 0 10px #000;
 }
 
-table{
-    margin: auto;
-}
 
 fieldset{
     border-radius: 1%;
     color: #777;
 }
 
-#dialog{
-    /* display:none; */
-    border: 1px solid black;
-    border-radius: 10%;
-    right: 0;
-    position: fixed;
-    background-color: #0000004f;
-    max-height: 500px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    z-index: 100;
-}
-
-.dialog__button{
-    color: red;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    box-shadow: 0 0 5px 1.2px #0000002d;
-    text-shadow: 0 0 3px #9e3e3e;
-    border-radius: 30%;
-}
 
 .boton_eliminar{
     color: #9e3e3e;
@@ -295,16 +263,12 @@ fieldset{
     padding-left: 40px  ;
 }
 
-.fila_tabla_final:hover{
-    background: linear-gradient(rgba(255, 0, 0, 0.815),transparent);
-    color: #fff;
-    border-radius: 10%;
-}
 
 label {
-    color: #000;
+    color: #0f0707;
     width: 100%;
     height: auto;
+    font-weight: 700;
 }
 
 #fieldset_form:hover{
@@ -314,6 +278,7 @@ label {
 
 #prueba_leyenda {
     color: #000;
+    font-size: 20px;
     text-shadow: 0 0 2px ;
 }
 
@@ -342,6 +307,21 @@ label {
 #form_inicial_submit:hover{
     color: #be9393;
     box-shadow: 0 0 0px 1px #9e3e3e;
+}
+
+table{
+    margin: auto;
+}
+
+.fila_tabla_final{
+    background: linear-gradient(to right,rgba(44, 43, 43, 0.815),transparent);
+    color: #fff;
+    border-radius: 10%;
+}
+
+.fila_tabla_final:hover{
+    background: linear-gradient(rgba(255, 0, 0, 0.815),transparent);
+    color: #fff;
 }
 
 #p_tabla {
