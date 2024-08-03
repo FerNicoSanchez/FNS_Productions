@@ -178,6 +178,13 @@ img_proyectos.addEventListener("click", () => {
   dialog.showModal();
 })
 
+const boton_atribuciones = document.getElementById("boton_atribuciones");
+
+boton_atribuciones.addEventListener("click", () => {
+  const dialog = document.getElementById("dialog_atribuciones");
+  dialog.showModal();
+})
+
 const form = document.getElementById("form_i");
 
 form.addEventListener("submit", enviarForm);

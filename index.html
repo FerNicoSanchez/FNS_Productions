@@ -28,29 +28,29 @@
 			</ul>
 			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
 		</nav>
-		<div class="div_dialog">
-			<dialog id="dialog_estudios">
-				<div id="dialog_div_estudios">
-					<p class="dialog__text">Página en producción...</p>
-					<details id="details_estudios-1">
-						<summary id="summary-1">Ingeniería Electrónica (UTN)</summary>
-						<div class="div_summary">
-							<h5>Proyectos relevantes</h5>
-						</div>
-					</details>
-					<details id="details_estudios-2">
-						<summary id="summary-2">Ingeniería en Sistemas de Información (UTN)</summary>
-						<div class="div_summary">
-							<span>2017 - Actualidad</span>
-							<h5>Proyectos relevantes</h5>
-						</div>
-					</details>
-					<form method="dialog">
-					<button class="dialog__button">X</button>
-					</form>
-				</div>
-			</dialog>
-		</div>
+		<dialog id="dialog_estudios">
+			<div id="dialog_div_estudios">
+				<p class="dialog__text">Página en producción...</p>
+				<details id="details_estudios-1">
+					<summary id="summary-1">Ingeniería Electrónica (UTN)</summary>
+					<div class="div_summary">
+						<span>2023 - Actualidad</span>
+						<h5>Proyectos relevantes</h5>
+					</div>
+				</details>
+				<details id="details_estudios-2">
+					<summary id="summary-2">Ingeniería en Sistemas de Información (UTN)</summary>
+					<div class="div_summary">
+						<span>2017 - Actualidad</span>
+						<span>Materias Aprobadas</span>
+						<h5>Proyectos relevantes</h5>
+					</div>
+				</details>
+				<form method="dialog">
+				<button class="dialog__button">X</button>
+				</form>
+			</div>
+		</dialog>
 		<div class="div_dialog">
 			<dialog id="dialog_expLaboral">
 				<div class="dialog_div_expLaboral">
@@ -92,7 +92,7 @@
 					<div id="div-2_section_2" class="div_section">
 						<a class="image-container">
 							<img id="image_estudios" class="image-container" src="Imagenes/estudios2_portfolio.jpeg">
-							<div class="overlay-text">Estudios</div>
+							<div class="overlay-text">Estudios y Conocimientos</div>
 						</a>
 					</div>
 					<div id="div-2_section_2" class="div_section ">
@@ -176,41 +176,52 @@
 		</section>
 	</main>
 	<footer>
-		<details  title="Atribuciones">
-			<summary id="summary_atribuciones">Atribuciones</summary>
-			<div id="div_footer_atribuciones">
+		<button id="boton_atribuciones">Atribuciones</button>
+		<dialog id="dialog_atribuciones">
+			<details  title="Atribuciones">
+				<summary id="summary_atribuciones">Iconos</summary>
+				<div id="div_footer_atribuciones">
+					<a 
+					href="https://www.flaticon.com/free-icons/instagram-logo" 
+					title="instagram logo icons"
+					target="_blank"
+					>
+					Instagram logo icons created by Hight Quality Icons - Flaticon
+				</a>
 				<a 
-				href="https://www.flaticon.com/free-icons/instagram-logo" 
-				title="instagram logo icons"
-				>
-				Instagram logo icons created by Hight Quality Icons - Flaticon
-			</a>
-			<a 
-				href="https://www.flaticon.com/free-icons/linkedin" 
-				title="linkedin icons"
-				>
-				Linkedin icons created by Ruslan Babkin - Flaticon
-			</a>
-			<a 
-				href="https://www.flaticon.com/free-icons/gmail" 
-				title="gmail icons"
-				>
-				Gmail icons created by Driss Lebbat - Flaticon
-			</a>
-			<a 
-				href="https://www.flaticon.com/free-icons/facebook" 
-				title="facebook icons"
-				>
-				Facebook icons created by Hight Quality Icons - Flaticon
-			</a>
-			<a 
-				href="https://www.flaticon.com/free-icons/whatsapp" 
-				title="whatsapp icons"
-				>
-				Whatsapp icons created by Hight Quality Icons - Flaticon
-			</a>
-			</div>
-		</details>
+					href="https://www.flaticon.com/free-icons/linkedin" 
+					title="linkedin icons"
+					target="_blank"
+					>
+					Linkedin icons created by Ruslan Babkin - Flaticon
+				</a>
+				<a 
+					href="https://www.flaticon.com/free-icons/gmail" 
+					title="gmail icons"
+					target="_blank"
+					>
+					Gmail icons created by Driss Lebbat - Flaticon
+				</a>
+				<a 
+					href="https://www.flaticon.com/free-icons/facebook" 
+					title="facebook icons"
+					target="_blank"
+					>
+					Facebook icons created by Hight Quality Icons - Flaticon
+				</a>
+				<a 
+					href="https://www.flaticon.com/free-icons/whatsapp" 
+					title="whatsapp icons"
+					target="_blank"
+					>
+					Whatsapp icons created by Hight Quality Icons - Flaticon
+				</a>
+				</div>
+			</details>
+			<form method="dialog">
+				<button class="dialog__button">X</button>
+			</form>
+		</dialog>
 		<div id="div_redes_sociales">
 			<a href="https://www.instagram.com/fernando_n._sanchez/" title="Instagram" target="_blank">
 				<img id="icon_ig" class="footer_icons" src="https://fernicosanchez.github.io/FNS_Productions/Imagenes/instagram32.png">
