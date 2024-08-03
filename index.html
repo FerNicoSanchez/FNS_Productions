@@ -28,17 +28,49 @@
 			</ul>
 			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
 		</nav>
-		<div id="div_dialog">
-			<dialog id="dialog">
-				<div class="dialog__div">
+		<div class="div_dialog">
+			<dialog id="dialog_estudios">
+				<div id="dialog_div_estudios">
 					<p class="dialog__text">Página en producción...</p>
-					<img id="img_dialog" class="image-container" src="Imagenes/fondolp2.jpg">
+					<details id="details_estudios-1">
+						<summary id="summary-1">Ingeniería Electrónica (UTN)</summary>
+						<div class="div_summary">
+							<h5>Proyectos relevantes</h5>
+						</div>
+					</details>
+					<details id="details_estudios-2">
+						<summary id="summary-2">Ingeniería en Sistemas de Información (UTN)</summary>
+						<div class="div_summary">
+							<span>2017 - Actualidad</span>
+							<h5>Proyectos relevantes</h5>
+						</div>
+					</details>
 					<form method="dialog">
 					<button class="dialog__button">X</button>
 					</form>
 				</div>
 			</dialog>
-			</div>
+		</div>
+		<div class="div_dialog">
+			<dialog id="dialog_expLaboral">
+				<div class="dialog_div_expLaboral">
+					<p class="dialog__text">Página en producción...</p>
+					<form method="dialog">
+					<button class="dialog__button">X</button>
+					</form>
+				</div>
+			</dialog>
+		</div>
+		<div class="div_dialog">
+			<dialog id="dialog_proyectos">
+				<div class="dialog_div_proyectos">
+					<p class="dialog__text">Proximamente...</p>
+					<form method="dialog">
+					<button class="dialog__button">X</button>
+					</form>
+				</div>
+			</dialog>
+		</div>
 	</header>
 	<main>
 		<section id="section_1">
@@ -58,20 +90,20 @@
 		<section id="section_2">
 				<div id="container__section-2">
 					<div id="div-2_section_2" class="div_section">
-						<a href="#" class="image-container">
-							<img class="image-container" src="Imagenes/estudios2_portfolio.jpeg">
+						<a class="image-container">
+							<img id="image_estudios" class="image-container" src="Imagenes/estudios2_portfolio.jpeg">
 							<div class="overlay-text">Estudios</div>
 						</a>
 					</div>
 					<div id="div-2_section_2" class="div_section ">
-						<a href="#" class="image-container">
-							<img id="image__expLaboral" class="image-container" src="Imagenes/ExpLaboral1.jpeg">
+						<a class="image-container">
+							<img id="image_expLaboral" class="image-container" src="Imagenes/ExpLaboral1.jpeg">
 							<div class="overlay-text">Experiencia Laboral</div>
 						</a>
 					</div>
 					<div id="div-3_section_2" class="div_section">
-						<a href="#" class="image-container">
-							<img class="image-container" src="Imagenes/Proyectos1.jpeg">
+						<a class="image-container">
+							<img id="image_proyectos" class="image-container" src="Imagenes/Proyectos1.jpeg">
 							<div class="overlay-text">Proyectos</div>
 						</a>
 					</div>

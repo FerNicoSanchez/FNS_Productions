@@ -13,13 +13,6 @@ function obtenerElementos() {
 }
 addEventListener("DOMContentLoaded", obtenerElementos()); //Al cargar el DOM ejecuta la función.
 
-if (performance.navigation.type == 1) {
-  let datos = localStorage.getItem("datos_ingresados");
-  if(!datos){
-    document.getElementById("tabla_final").classList.add("hidden");
-  }
-}
-
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
   navLinks.classList.toggle('active');
@@ -163,14 +156,28 @@ function leerGoogleSheets(){
     .catch(error => console.error('Error fetching data:', error));
   };
 
+// Informacion en dialogs.
 
-const form = document.getElementById("form_i");
+const img_estudios = document.getElementById("image_estudios");
 
-const img_expLaboral = document.getElementById("image__expLaboral");
-
-img_expLaboral.addEventListener("click", () => {
-  const dialog = document.getElementById("dialog");
+img_estudios.addEventListener("click", () => {
+  const dialog = document.getElementById("dialog_estudios");
   dialog.showModal();
 })
+
+const img_expLaboral = document.getElementById("image_expLaboral");
+
+img_expLaboral.addEventListener("click", () => {
+  const dialog = document.getElementById("dialog_expLaboral");
+  dialog.showModal();
+})
+const img_proyectos = document.getElementById("image_proyectos");
+
+img_proyectos.addEventListener("click", () => {
+  const dialog = document.getElementById("dialog_proyectos");
+  dialog.showModal();
+})
+
+const form = document.getElementById("form_i");
 
 form.addEventListener("submit", enviarForm);
