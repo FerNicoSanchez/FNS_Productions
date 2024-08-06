@@ -101,32 +101,11 @@ nav {
 
 /*  ********* Dialogs ************ */
 
-span{
-    width: 100px;
-    height: 500px;
-    color: white;
-    box-shadow: 0 2px 5px 5px black;
-    margin-left: 50%;
-    padding: 1%;
-}
-
-#dialog_estudios{
-    background: url(Imagenes/estudios1_portfolio.jpeg);
-    border-color: #427be6;
-    border-width: 1px;
-    box-shadow: 0 0 5px 2px #427be6;
-}
-
-#dialog_div_estudios{
-    width: 50vw;
-    max-height: 800px;
-}
-
 .dialog__button{
     color: red;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 0;
     box-shadow: 0 0 5px 1.2px #0000002d;
     text-shadow: 0 0 3px #9e3e3e;
     border-radius: 30%;
@@ -150,6 +129,188 @@ span{
 #boton_atribuciones:hover{
     background-color: #ffffff83;
 }
+
+.container_estudios{
+    background: url(../Imagenes/estudios1_portfolio.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+    border-color: #427be6;
+    border-width: 1px;
+    box-shadow: 0 0 5px 2px #427be6;
+    width: min-content;
+    height: min-content;
+    padding: 10px 5px;
+    border-radius: 2%;
+    user-select: none;
+    /* transition: 4s; */
+}
+/* 
+.container_estudios:hover{
+    opacity: 0;
+    font-size: 1px;
+} */
+
+#dialog_div_estudios-1{
+    min-width: 400px;
+    max-height: 800px;
+}
+
+#dialog_div_estudios-2{
+    min-width: 400px;
+    max-height: 800px;
+}
+
+.span_fechas{
+    color: white;
+    box-shadow: 0 1px 4px 4px black;
+    padding: 1px;
+    background-color: #427be660;
+}
+
+#fecha_elec{
+    position: relative;
+    top: 17px;
+    left: 269px;
+}
+
+#fecha_sis{
+    position: relative;
+    top: 65px;
+    left: 150px;
+}
+
+#fecha_tec{
+    position: relative;
+    top: 115px;
+    left: 30px;
+}
+
+.h2_estudios{
+    width: fit-content;
+    height: min-content;
+    margin-left: 30px;
+    padding: 0 5px;
+    background: linear-gradient(rgba(201, 181, 181, 0.747),rgba(175, 98, 98, 0.671));
+    border-radius: 30%;
+}
+
+.lista_estudios-1{
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.carrera_item{
+    width: fit-content;
+    background-color: #427be6c2;
+    text-decoration: underline;
+    border-radius: 15%;
+    padding: 0 3px;
+    margin-top: 0;
+}
+
+.lista_estudios-2{
+    list-style: none;
+    color: white;
+}
+
+#conocimiento_office{
+    width: 80%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_google{
+    width: 85%;
+    box-shadow: 0 0 5px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_git{
+    width: 55%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_sql{
+    width: 60%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_py{
+    width: 50%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_html{
+    width: 85%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_css{
+    width: 80%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_js{
+    width: 95%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_cplus{
+    width: 90%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_c{
+    width: 70%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+#conocimiento_ingles{
+    width: 75%;
+    box-shadow: 0 0 2px 3px #427be6c2;
+    background-color: #427be6;
+}
+
+.conocimiento_porcentaje{
+    padding: 0 75px;
+    position: absolute;
+    font-size: 0.8em;
+    left: 25%;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.conocimiento_porcentaje:hover{
+    opacity: 1;
+}
+
+#ampliar_info{
+    font-weight: 600;
+    padding: 0 25px;
+    border-radius: 45%;
+    margin-left: 25%;
+    box-shadow: 0 0 10px 2px #427be66e;
+    background-color: transparent;
+    color: #fff;
+    transition: 2s;
+}
+
+#ampliar_info:hover{
+    font-size: 1.1em;
+    background-color: #0005;
+    box-shadow: 0 0 10px 10px #427be66e;
+}
+
 
 #section_1 {
     display: flex;

@@ -29,30 +29,35 @@
 			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
 		</nav>
 		<dialog id="dialog_estudios">
-			<div id="dialog_div_estudios-1">
-				<h2 class="h2_estudios">Carreras de Grado</h2>
-				<span class="span_fechas">2023 - Actualidad</span>
-				<ul class="lista_estudios-1">
-					<li><h6>Ingeniería Electrónica</h6></li>
-					<li><h6>Ingeniería en Sistemas de Información</h6></li>
-					<li><h6>Tecnicatura Electrónica</h6></li>
-				</ul>
-			</div>
-			<div id="dialog_div_estudios-2">
-				<h2 class="h2_estudios">Conocimientos</h2>
-				<span class="span_fechas">2023 - Actualidad</span>
-				<ul class="lista_estudios-2">
-					<li><h6>Microsoft Office</h6></li>
-					<li><h6>Google Workspace</h6></li>
-					<li><h6>Git</h6></li>
-					<li><h6>SQL</h6></li>
-					<li><h6>Python</h6></li>
-					<li><h6>HTML</h6></li>
-					<li><h6>CSS</h6></li>
-					<li><h6>JavaScript</h6></li>
-					<li><h6>C++</h6></li>
-					<li><h6>C</h6></li>
-				</ul>
+			<div class="container_estudios">
+				<div id="dialog_div_estudios-1">
+					<h2 class="h2_estudios">Carreras de Grado</h2>
+					<span id="fecha_elec" class="span_fechas">2017 - Actualidad</span>
+					<span id="fecha_sis" class="span_fechas">2023 - Actualidad</span>
+                    <span id="fecha_tec" class="span_fechas">2010 - 2015</span>
+					<ul class="lista_estudios-1">
+						<li><h6 class="carrera_item">Ingeniería Electrónica (2º)</h6></li>
+						<li><h6 class="carrera_item">Ingeniería en Sistemas (1º)</h6></li>
+						<li><h6 class="carrera_item">Tecnicatura Electrónica (Finalizada)</h6></li>
+					</ul>
+				</div>
+				<div id="dialog_div_estudios-2">
+					<h2 class="h2_estudios">Conocimientos</h2>
+					<ul class="lista_estudios-2">
+						<li><span class="conocimiento_porcentaje">80%</span><h6 id="conocimiento_office">Microsoft Office</h6></li>
+						<li><span class="conocimiento_porcentaje">85%</span><h6 id="conocimiento_google">Google Workspace</h6></li>
+						<li><span class="conocimiento_porcentaje">55%</span><h6 id="conocimiento_git">Git</h6></li>
+						<li><span class="conocimiento_porcentaje">60%</span><h6 id="conocimiento_sql">SQL</h6></li>
+						<li><span class="conocimiento_porcentaje">50%</span><h6 id="conocimiento_py">Python</h6></li>
+						<li><span class="conocimiento_porcentaje">85%</span><h6 id="conocimiento_html">HTML</h6></li>
+						<li><span class="conocimiento_porcentaje">80%</span><h6 id="conocimiento_css">CSS</h6></li>
+						<li><span class="conocimiento_porcentaje">95%</span><h6 id="conocimiento_js">JavaScript</h6></li>
+						<li><span class="conocimiento_porcentaje">90%</span><h6 id="conocimiento_cplus">C++</h6></li>
+						<li><span class="conocimiento_porcentaje">70%</span><h6 id="conocimiento_c">C</h6></li>
+						<li><span class="conocimiento_porcentaje">75%</span><h6 id="conocimiento_ingles">Inglés</h6></li>
+					</ul>
+				</div>
+                <button id="ampliar_info">Ampliar Información</button>
 			</div>
 			<form method="dialog">
 				<button class="dialog__button">X</button>

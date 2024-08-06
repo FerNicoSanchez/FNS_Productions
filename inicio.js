@@ -143,12 +143,13 @@ function leerGoogleSheets(){
     fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSnNrEoQx1wB03wSCIl4_GiiuQUS4jWKFCbvHJORuCxuxRD4HZ6Ocp7Ln1hBJAtOZva0MhX2KpCALlG/pub?gid=0&single=true&output=csv')
     .then(response => response.text())
     .then(data => {
-        const rows = data.split('\n');
+        const rows = data.split('\n'); //Si una celda contiene un enter se rompe la estructura.
         const jsonData = rows.map(row => {
             const columns = row.split(',');
             return columns;
         });
         console.log(jsonData);
+        console.log(rows);
         // jsonData.forEach(fila => {
         //   agregarFila(fila[1],fila[2],fila[3],fila[4]);
         // })
