@@ -170,19 +170,19 @@ nav {
 #fecha_elec{
     position: absolute;
     top: 85px;
-    right: 50px;
+    right: 20px;
 }
 
 #fecha_sis{
     position: absolute;
     top: 130px;
-    right: 50px;
+    right: 20px;
 }
 
 #fecha_tec{
     position: absolute;
     top: 175px;
-    right: 50px;
+    right: 20px;
 }
 
 .h2_estudios{
