@@ -131,15 +131,15 @@ nav {
 }
 
 .container_estudios{
-    background: url(../Imagenes/estudios1_portfolio.jpeg);
+    background: url(Imagenes/estudios1_portfolio.jpeg);
     background-size: contain;
     background-attachment: fixed;
     border-color: #427be6;
     border-width: 1px;
     box-shadow: 0 0 5px 2px #427be6;
-    width: min-content;
+    width: fit-content;
     height: min-content;
-    padding: 10px 5px;
+    padding: 5px 50px 5px 5px;
     border-radius: 2%;
     user-select: none;
     /* transition: 4s; */
@@ -168,21 +168,21 @@ nav {
 }
 
 #fecha_elec{
-    position: relative;
-    top: 17px;
-    left: 269px;
+    position: absolute;
+    top: 85px;
+    right: 50px;
 }
 
 #fecha_sis{
-    position: relative;
-    top: 65px;
-    left: 150px;
+    position: absolute;
+    top: 130px;
+    right: 50px;
 }
 
 #fecha_tec{
-    position: relative;
-    top: 115px;
-    left: 30px;
+    position: absolute;
+    top: 175px;
+    right: 50px;
 }
 
 .h2_estudios{
