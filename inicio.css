@@ -459,8 +459,9 @@ nav {
 /* ----------- Proyectos -----------*/
 
 #dialog_proyectos{
-    background: url(Imagenes/proyecto_gris2.jpeg);
+    background: url(Imagenes/proyectos_oscuro1.jpeg);
     background-size: cover;
+    background-position: center;
     max-width: fit-content;
     max-height: fit-content;
 }
@@ -494,8 +495,10 @@ nav {
 
 #lista_proyectos p{
     text-align: center;
-    color: rgb(158, 46, 65);
-    background-color: rgba(245, 245, 245, 0.39);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px whitesmoke;
+    font-weight: 700;
+    /* background-color: rgba(245, 245, 245, 0.39); */
     font-size: 18px;   
     width: fit-content;
     border-radius: 15px;
