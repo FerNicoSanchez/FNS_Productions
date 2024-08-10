@@ -80,25 +80,20 @@ body{
 /* */
 
 .container_estudios{
-    background: url(../Imagenes/estudios1_portfolio.jpeg);
-    background-size: contain;
-    background-attachment: fixed;
+    background: url(../Imagenes/fondoestudiogris1.jpeg);
+    background-size: cover;
+    background-position: top;
     border-color: #427be6;
     border-width: 1px;
     box-shadow: 0 0 5px 2px #427be6;
     width: min-content;
-    max-width: 50vw;
+    max-width: 90vw;
+    min-width: 400px;
     height: min-content;
     padding: 10px 5px;
     border-radius: 2%;
     user-select: none;
-    /* transition: 4s; */
 }
-/* 
-.container_estudios:hover{
-    opacity: 0;
-    font-size: 1px;
-} */
 
 #dialog_div_estudios-1{
     min-width: 400px;
@@ -111,53 +106,54 @@ body{
 }
 
 .span_fechas{
-    color: white;
+    color: rgb(134, 0, 0);
     box-shadow: 0 1px 4px 4px black;
+    font-weight: 700;
     padding: 1px;
-    background-color: #427be660;
+    border-radius: 5%;
 }
 
 #fecha_elec{
     position: relative;
-    top: 17px;
-    left: 269px;
+    top: 2.7vh;
+    left: 265px;
 }
 
 #fecha_sis{
     position: relative;
-    top: 65px;
-    left: 150px;
+    top: 11.7vh;
+    left: 140px;
 }
 
 #fecha_tec{
     position: relative;
-    top: 115px;
-    left: 30px;
+    top: 19.7vh;
+    left: 55px;
 }
 
 .h2_estudios{
     width: fit-content;
     height: min-content;
     margin-left: 30px;
-    padding: 0 5px;
-    background: linear-gradient(rgba(201, 181, 181, 0.747),rgba(175, 98, 98, 0.671));
+    font-weight: 900;
+    text-shadow: 0 0 10px black;
     border-radius: 30%;
+    color: rgb(134, 0, 0);
+    font-size: 32px;
 }
 
 .lista_estudios-1{
     list-style: none;
-    font-size: 20px;
-    color: #fff;
+    color: #031941;
+    text-shadow: 0 0 7px whitesmoke;
     margin-top: 0;
 }
 
 .carrera_item{
     width: fit-content;
-    background-color: #427be6c2;
     text-decoration: underline;
-    border-radius: 15%;
-    padding: 0 3px;
     margin-top: 0;
+    font-size: 17px;
 }
 
 .lista_estudios-2{
@@ -237,7 +233,7 @@ body{
     font-size: 0.8em;
     left: 10%;
     opacity: 0;
-    transition: 1.5s;
+    transition: 1.2s;
 }
 
 .conocimiento_porcentaje:hover{
@@ -245,19 +241,19 @@ body{
 }
 
 #ampliar_info{
-    font-weight: 600;
+    font-weight: 900;
     padding: 0 25px;
     border-radius: 45%;
     margin-left: 25%;
     box-shadow: 0 0 10px 2px #427be66e;
     background-color: transparent;
-    color: #fff;
+    color: #1d0000;
     transition: 2s;
 }
 
 #ampliar_info:hover{
     font-size: 1.1em;
-    background-color: #0005;
-    box-shadow: 0 0 10px 10px #427be66e;
+    background-color: rgba(202, 195, 195, 0.333);
+    box-shadow: 0 0 2px 4px #427be66e;
 }
 

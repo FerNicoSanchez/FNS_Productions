@@ -1,7 +1,8 @@
 body{
-    background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/Proyectos2.jpeg);
+    background: url(Imagenes/fondogris2.jpeg);
     background-size: cover;
-    background-position: left;
+    background-repeat: no-repeat;
+    background-position: top;
     background-attachment: fixed;
     margin: 0%;
     padding: 0%;
@@ -131,24 +132,20 @@ nav {
 }
 
 .container_estudios{
-    background: url(Imagenes/estudios1_portfolio.jpeg);
-    background-size: contain;
-    background-attachment: fixed;
+    background: url(../Imagenes/fondoestudiogris1.jpeg);
+    background-size: cover;
+    background-position: top;
     border-color: #427be6;
     border-width: 1px;
     box-shadow: 0 0 5px 2px #427be6;
-    width: fit-content;
+    width: min-content;
+    max-width: 90vw;
+    min-width: 400px;
     height: min-content;
-    padding: 5px 50px 5px 5px;
+    padding: 10px 5px;
     border-radius: 2%;
     user-select: none;
-    /* transition: 4s; */
 }
-/* 
-.container_estudios:hover{
-    opacity: 0;
-    font-size: 1px;
-} */
 
 #dialog_div_estudios-1{
     min-width: 400px;
@@ -161,53 +158,54 @@ nav {
 }
 
 .span_fechas{
-    color: white;
+    color: rgb(134, 0, 0);
     box-shadow: 0 1px 4px 4px black;
+    font-weight: 700;
     padding: 1px;
-    background-color: #427be660;
+    border-radius: 5%;
 }
 
 #fecha_elec{
-    position: absolute;
-    top: 85px;
-    right: 20px;
+    position: relative;
+    top: 2.7vh;
+    left: 265px;
 }
 
 #fecha_sis{
-    position: absolute;
-    top: 130px;
-    right: 20px;
+    position: relative;
+    top: 11.7vh;
+    left: 140px;
 }
 
 #fecha_tec{
-    position: absolute;
-    top: 175px;
-    right: 20px;
+    position: relative;
+    top: 19.7vh;
+    left: 55px;
 }
 
 .h2_estudios{
     width: fit-content;
     height: min-content;
-    margin-left: 30px;
-    padding: 0 5px;
-    background: linear-gradient(rgba(201, 181, 181, 0.747),rgba(175, 98, 98, 0.671));
-    border-radius: 30%;
+    margin-left: 25px;
+    font-weight: 900;
+    text-shadow: 0 0 10px black;
+    color: rgb(134, 0, 0);
+    font-size: 32px;
 }
 
 .lista_estudios-1{
     list-style: none;
-    font-size: 20px;
-    color: #fff;
+    color: #031941;
+    text-shadow: 0 0 7px whitesmoke;
     margin-top: 0;
+    margin-left: -5px;
 }
 
 .carrera_item{
     width: fit-content;
-    background-color: #427be6c2;
     text-decoration: underline;
-    border-radius: 15%;
-    padding: 0 3px;
     margin-top: 0;
+    font-size: 17px;
 }
 
 .lista_estudios-2{
@@ -285,9 +283,9 @@ nav {
     padding: 0 75px;
     position: absolute;
     font-size: 0.8em;
-    left: 25%;
+    left: 10%;
     opacity: 0;
-    transition: 1.5s;
+    transition: 1.2s;
 }
 
 .conocimiento_porcentaje:hover{
@@ -295,34 +293,34 @@ nav {
 }
 
 #ampliar_info{
-    font-weight: 600;
+    font-weight: 900;
     padding: 0 25px;
     border-radius: 45%;
     margin-left: 25%;
     box-shadow: 0 0 10px 2px #427be66e;
     background-color: transparent;
-    color: #fff;
+    color: #1d0000;
     transition: 2s;
 }
 
 #ampliar_info:hover{
     font-size: 1.1em;
-    background-color: #0005;
-    box-shadow: 0 0 10px 10px #427be66e;
+    background-color: rgba(202, 195, 195, 0.333);
+    box-shadow: 0 0 2px 4px #427be66e;
 }
+
 
 
 #section_1 {
     display: flex;
     flex-direction: row;
-    background: url(https://fernicosanchez.github.io/FNS_Productions/Imagenes/foto_ig_campera.jpg);
+    background: url(Imagenes/foto_ig_campera.jpg    );
     background-size: contain;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    
     margin: auto;
     margin-left: 3%;
-    border-radius: 50%;
+    border-radius: 30%;
     position: relative;
 }
 
@@ -338,7 +336,7 @@ nav {
     font-size: 18px;
     font-weight: 400;
     color: rgb(255, 255, 255);
-    margin-top: 30vh;
+    margin-top: 35vh;
     padding: 5%;
 }
 
@@ -356,7 +354,7 @@ nav {
         font-weight: 700;
         margin-left: clamp(41%,46%,49%);
         margin-right: clamp(10vw,11vw,12vw);
-        margin-top: 10%;
+        margin-top: 12%;
         padding: 2%;
         color: rgb(255, 255, 255);
         position: relative;
@@ -365,8 +363,6 @@ nav {
     }
     
     #p_section-1:hover {
-        /* background-color: #ffffffb0;
-        color: rgb(0, 0, 0); */
         transform: rotateY(0);
         border-radius: 0 5% 5% 0;
     }
@@ -389,13 +385,14 @@ nav {
 .image-container img {
     width: 80%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px .5px #427be6;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .image-container img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
 }
 
 
@@ -404,12 +401,13 @@ nav {
     left: 50%;
     top: -100%;
     transform: translate(-50%, -50%);
-    color: rgba(253, 235, 235, 0.753);
-    font-size: medium;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
     font-weight: bold;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.637);
+    text-shadow: 0 2px 4px rgba(177, 177, 177, 0.637);
     pointer-events: none; /* Permite que los clics pasen a la imagen */
     text-wrap: balance;
+    text-align: center;
 }
 
 /* ---------------------- Fin Section 1 ------------------------- */
