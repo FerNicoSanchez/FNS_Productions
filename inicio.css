@@ -8,10 +8,6 @@ body{
     padding: 0%;
 }
 
-.hidden {
-    display: none !important;
-}
-
 /* ----------- Header - Menu ------------- */
 nav {
     display: flex;
@@ -100,7 +96,110 @@ nav {
 
 /* ---------------- Section 1 --------------- */
 
-/*  ********* Dialogs ************ */
+#section_1 {
+    display: flex;
+    flex-direction: row;
+    background: url(Imagenes/foto_ig_campera.jpg);
+    background-size: contain;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-left: 3%;
+    border-radius: 30%;
+    position: relative;
+}
+
+
+#div-1_section_1 {
+    height: 700px;
+}
+
+#p_section-1{
+    background-color: #0000005b;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
+    border-radius: 25%;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-top: 35vh;
+    padding: 5%;
+}
+
+
+@media (min-width: 780px) {
+    #div-1_section_1 {
+        min-height: 900px;
+    }
+
+    #p_section-1{
+        background-color: #00000098;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
+        border-radius: 5% 5% 5% 5%;
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: clamp(41%,46%,49%);
+        margin-right: clamp(10vw,11vw,12vw);
+        margin-top: 12%;
+        padding: 2%;
+        color: rgb(255, 255, 255);
+        position: relative;
+        transform: perspective(700px) rotateY(-30deg);
+        transition: 2.5s;
+    }
+    
+    #p_section-1:hover {
+        transform: rotateY(0);
+        border-radius: 0 5% 5% 0;
+    }
+}
+
+/* ---------------------- Fin Section 1 ------------------------- */
+
+
+
+#container__section-2{
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5px .5px #427be6;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+}
+
+
+.overlay-text {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(177, 177, 177, 0.637);
+    pointer-events: none; /* Permite que los clics pasen a la imagen */
+    text-wrap: balance;
+    text-align: center;
+}
+
+/*  ************* Dialogs section 2 ****************** */
 
 .dialog__button{
     color: red;
@@ -112,38 +211,24 @@ nav {
     border-radius: 30%;
 }
 
+/* ----------- Estudios ------------*/
 
-#dialog_atribuciones{
-    width: 80vw;
-    height: 60vh;
-}
-
-#boton_atribuciones{
-    margin-top: 10px;
-    border-radius: 30%;
-    color: #000000;
-    background-color: transparent;
-    text-shadow: 0 0 10px black;
-    font-weight: 700;
-}
-
-#boton_atribuciones:hover{
-    background-color: #ffffff83;
-}
-
-.container_estudios{
+#dialog_estudios{
     background: url(Imagenes/fondoestudiogris1.jpeg);
     background-size: cover;
     background-position: top;
     border-color: #427be6;
     border-width: 1px;
     box-shadow: 0 0 5px 2px #427be6;
+    border-radius: 2%;
+}
+
+.container_estudios{
     width: min-content;
     max-width: 90vw;
     min-width: 400px;
     height: min-content;
     padding: 10px 5px;
-    border-radius: 2%;
     user-select: none;
 }
 
@@ -283,7 +368,7 @@ nav {
     padding: 0 75px;
     position: absolute;
     font-size: 0.8em;
-    left: 10%;
+    left: 30%;
     opacity: 0;
     transition: 1.2s;
 }
@@ -310,217 +395,58 @@ nav {
 }
 
 
+/*------- Fin Estudios -------*/
 
-#section_1 {
+/*--------- Exp Laboral --------*/
+
+#dialog_expLaboral{
+    background: linear-gradient(to right,#427be6,#ffffff83);
+    max-width: 80vw;
+    min-width: 340px;
+    height: fit-content;
+}
+
+.dialog_div_expLaboral{
     display: flex;
-    flex-direction: row;
-    background: url(Imagenes/foto_ig_campera.jpg    );
-    background-size: contain;
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-left: 3%;
-    border-radius: 30%;
-    position: relative;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
 }
 
+#tabla_expLaboral{
 
-#div-1_section_1 {
-    height: 700px;
 }
 
-#p_section-1{
-    background-color: #0000005b;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
-    border-radius: 25%;
+.h3_expLaboral{
+    text-shadow: 0 0 7px whitesmoke;
+}
+
+#tabla_expLaboral td:first-child{
+    text-align: justify;
+    text-shadow: 0 0 1px red;
+    padding-right: 50px;
+}
+
+#tabla_expLaboral h5{
     font-size: 18px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    margin-top: 35vh;
-    padding: 5%;
+    text-shadow: none;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+
+#tabla_expLaboral td:last-child{
+    text-align: justify;
+    text-shadow: 0 0 1px red;
+}
+
+#p_expLaboral{
+    max-width: 80%;
 }
 
 
-@media (min-width: 780px) {
-    #div-1_section_1 {
-        min-height: 900px;
-    }
-
-    #p_section-1{
-        background-color: #00000098;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.418);
-        border-radius: 5% 5% 5% 5%;
-        font-size: 24px;
-        font-weight: 700;
-        margin-left: clamp(41%,46%,49%);
-        margin-right: clamp(10vw,11vw,12vw);
-        margin-top: 12%;
-        padding: 2%;
-        color: rgb(255, 255, 255);
-        position: relative;
-        transform: perspective(700px) rotateY(-30deg);
-        transition: 2.5s;
-    }
-    
-    #p_section-1:hover {
-        transform: rotateY(0);
-        border-radius: 0 5% 5% 0;
-    }
-}
 
 
-#container__section-2{
-    margin-left: 5%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 5px;
-}
-
-.image-container {
-    position: relative;
-    cursor: pointer;
-}
-
-.image-container img {
-    width: 80%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 5px .5px #427be6;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
-}
-
-
-.overlay-text {
-    position: absolute;
-    left: 50%;
-    top: -100%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    font-size: 19px;
-    font-weight: bold;
-    text-shadow: 0 2px 4px rgba(177, 177, 177, 0.637);
-    pointer-events: none; /* Permite que los clics pasen a la imagen */
-    text-wrap: balance;
-    text-align: center;
-}
-
-/* ---------------------- Fin Section 1 ------------------------- */
-
-/* ----------------------- Formulario -----------------------------*/
-
-.form_inicial{
-    padding-top: 5px;
-    border-radius: 7px;
-    border-width:medium;
-    border-style: double;
-    border-color: crimson;
-    padding: 1px 100px 0 5px;
-    background: turquoise;
-    color: black;
-    margin: 2px;
-    text-align: left;
-}
-
-.form_inicial:hover{
-    box-shadow: 0 0 10px #000;
-}
-
-
-fieldset{
-    border-radius: 1%;
-    color: #777;
-}
-
-
-.boton_eliminar{
-    color: #9e3e3e;
-    box-shadow: 0 0 5px 1.2px #0000002d;
-}
-
-.boton_eliminar:hover{
-    color: #070c0373;
-    box-shadow: 0 0 5px 1.2px #0000002d;
-    border-radius: 25%;
-    
-}
-
-.td_btn_eliminar{
-    padding-left: 40px  ;
-}
-
-
-label {
-    color: #0f0707;
-    width: 100%;
-    height: auto;
-    font-weight: 700;
-}
-
-#fieldset_form:hover{
-    box-sizing: border-box;
-    box-shadow: 0 0 5px 1px #080808;
-}
-
-#prueba_leyenda {
-    color: #000;
-    font-size: 20px;
-    text-shadow: 0 0 2px ;
-}
-
-.div_form {
-    display: grid;
-    grid-template-columns:min-content;
-    justify-content: left;
-}
-
-
-@media (max-width: 600px) {
-    .div_form {
-        display: grid;
-        grid-template-columns:min-content;
-        justify-content: center;
-    }
-}
-
-#form_inicial_submit{
-    width: 150px;
-    border-radius: 15%;
-    background-color: #07040450;
-    color:#ffffffbe;
-}
-
-#form_inicial_submit:hover{
-    color: #be9393;
-    box-shadow: 0 0 0px 1px #9e3e3e;
-}
-
-table{
-    margin: auto;
-}
-
-.fila_tabla_final{
-    background: linear-gradient(to right,rgba(44, 43, 43, 0.815),transparent);
-    color: #fff;
-    border-radius: 10%;
-}
-
-.fila_tabla_final:hover{
-    background: linear-gradient(rgba(255, 0, 0, 0.815),transparent);
-    color: #fff;
-}
-
-#p_tabla {
-    text-align: center;
-    color: #070404;
-    text-shadow: 0 0 3px rgb(31, 9, 9);
-    font-weight: 900;
-}
+/*  ************* Fin Dialogs section 2 ****************** */
 
 
 /* ------------------------ Footer ------------------------------*/
@@ -530,7 +456,6 @@ footer {
     position: relative;
     margin-top: 10px;
     width: 100%;
-    /* max-height: 50px; */
 }
 
 #div_footer_atribuciones{
@@ -540,6 +465,25 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
+}
+
+
+#dialog_atribuciones{
+    width: 80vw;
+    height: 60vh;
+}
+
+#boton_atribuciones{
+    margin-top: 10px;
+    border-radius: 30%;
+    color: #000000;
+    background-color: transparent;
+    text-shadow: 0 0 10px black;
+    font-weight: 700;
+}
+
+#boton_atribuciones:hover{
+    background-color: #ffffff83;
 }
 
 
