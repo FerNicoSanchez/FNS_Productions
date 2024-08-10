@@ -404,6 +404,7 @@ nav {
     max-width: 80vw;
     min-width: 340px;
     height: fit-content;
+    box-shadow: 0 0 3px 0 black;
 }
 
 .dialog_div_expLaboral{
@@ -413,16 +414,12 @@ nav {
     align-items: center;
 }
 
-#tabla_expLaboral{
-
-}
-
 .h3_expLaboral{
     text-shadow: 0 0 7px whitesmoke;
 }
 
 #tabla_expLaboral td:first-child{
-    text-align: justify;
+    text-align: balance;
     text-shadow: 0 0 1px red;
     padding-right: 50px;
 }
@@ -443,7 +440,66 @@ nav {
     max-width: 80%;
 }
 
+#button-detalles_expLaboral{
+    background-color: #000000;
+    box-shadow: 0 0 10px 1px blue;
+    color: #ffffff83;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: 2s;
+}
 
+#button-detalles_expLaboral:hover{
+    font-size: 1.1em;
+    text-shadow: 0 0 1px red;
+}
+
+/*--------- Fin expLaboral ----------*/
+
+/* ----------- Proyectos -----------*/
+
+#dialog_proyectos{
+    background: url(Imagenes/proyecto_gris2.jpeg);
+    background-size: cover;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.dialog_div_proyectos{
+    max-width: 90%;
+    margin-left: 15px;
+}
+
+#h2_proyectos{
+    text-align: center;
+    text-shadow: 0 0 7px rgba(241, 15, 15, 0.801);
+    font-size: 26px;
+}
+
+#lista_proyectos{
+    list-style: none;
+    text-align: balance;
+}
+
+#lista_proyectos h3{
+    margin-left: 25%;
+    font-size: 24px;
+    border-radius: 30px;
+    text-align: center;
+    width: 45%;
+    color: rgb(177, 42, 170);
+    box-shadow: 0 0 10px 0 black;
+    background: linear-gradient(to right,rgba(37, 37, 37, 0.747),rgb(194, 184, 184));
+}
+
+#lista_proyectos p{
+    text-align: center;
+    color: rgb(158, 46, 65);
+    background-color: rgba(245, 245, 245, 0.39);
+    font-size: 18px;   
+    width: fit-content;
+    border-radius: 15px;
+}
 
 
 /*  ************* Fin Dialogs section 2 ****************** */
@@ -469,8 +525,10 @@ footer {
 
 
 #dialog_atribuciones{
-    width: 80vw;
-    height: 60vh;
+    width: fit-content;
+    height: clamp(100px,200px,400px);
+    background: linear-gradient(to bottom,whitesmoke,black);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.568);
 }
 
 #boton_atribuciones{
@@ -492,7 +550,6 @@ footer {
     margin-left: 30%;
     display: flex;
     position: absolute;
-    /* flex-direction: row; */
     top: 100;
     justify-content: end;
     gap: 10px;
