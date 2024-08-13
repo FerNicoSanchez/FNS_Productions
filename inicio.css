@@ -410,6 +410,14 @@ nav {
     opacity: 0;
 }
 
+.container_estudios-detalles li p{
+    margin-top: 0;
+}
+
+.container_estudios-detalles h6{
+    margin-bottom: 10px;
+}
+
 /*------- Fin Estudios -------*/
 
 /*--------- Exp Laboral --------*/
