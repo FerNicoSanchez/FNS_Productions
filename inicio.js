@@ -31,5 +31,37 @@ boton_atribuciones.addEventListener("click", () => {
   const dialog = document.getElementById("dialog_atribuciones");
   dialog.showModal();
 })
+//Fin dialogs
+
+//Botones de dialogs
+
+//Estudios
+const ampliar_info = document.querySelector("#ampliar_info");
+
+ampliar_info.addEventListener("click", () => {
+  const container_estudios = document.querySelector(".container_estudios");
+  const detalles = document.querySelector(".container_estudios-detalles");
+  container_estudios.style.animation = "desaparecer 2s forwards";
+  detalles.style.display = "block";
+  detalles.style.animation = "aparecer 4s forwards";
+})
+
+const reducir_info = document.querySelector("#reducir_info");
+
+reducir_info.addEventListener("click", () => {
+  const container_estudios = document.querySelector(".container_estudios");
+  const detalles = document.querySelector(".container_estudios-detalles");
+  detalles.style.animation = "desaparecer 2s forwards";
+  container_estudios.style.display = "block";
+  container_estudios.style.animation = "aparecer 4s forwards";
+})
 
 
+//Exp Laboral
+
+const boton_detalle_expLaboral = document.querySelector("#button-detalles_expLaboral");
+
+boton_detalle_expLaboral.addEventListener("click", () => {
+  const div_expLaboral = document.querySelector(".dialog_div_expLaboral");
+  div_expLaboral.style.animation = "desplazamiento1 3s";
+})

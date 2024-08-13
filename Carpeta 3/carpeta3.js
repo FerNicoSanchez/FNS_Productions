@@ -157,3 +157,23 @@ function leerGoogleSheets(){
 const form = document.getElementById("form_i");
 
 form.addEventListener("submit", enviarForm);
+
+
+function cambiarContenido() {
+    const infoDiv = document.querySelector('.container_estudios');
+
+    // Animar salida
+    infoDiv.classList.add('slide-out-right');
+
+    // Esperar a que termine la animación de salida antes de cambiar el contenido
+    setTimeout(() => {
+        infoDiv.textContent = 'Este es el nuevo contenido.';
+        infoDiv.classList.remove('slide-out-right');
+        infoDiv.classList.add('slide-in-left');
+    }, 500); // Tiempo igual a la duración de la animación de salida
+
+    // Limpiar clases de animación después de la entrada
+    setTimeout(() => {
+        infoDiv.classList.remove('slide-in-left');
+    }, 1000); // Duración total de las animaciones
+}
