@@ -204,7 +204,7 @@ nav {
 .dialog__button{
     color: red;
     position: absolute;
-    top: 10px;
+    top: 14px;
     right: 0;
     box-shadow: 0 0 5px 1.2px #0000002d;
     text-shadow: 0 0 3px #9e3e3e;
@@ -227,7 +227,6 @@ nav {
 #div_estudios-0 {
     display: flex;
     flex-direction: column;
-    gap: 100px;
     min-width: 400px;
     max-width: 500px;
     height: auto;
@@ -239,48 +238,30 @@ nav {
     user-select: none;
 }
 
-/* #dialog_div_estudios-1{
-    min-width: 400px;
-    max-height: auto;
+.carrera_item{
+    width: fit-content;
+    margin-top: 0;
+    font-size: 17px;
+    color: #000000;
+    text-shadow: 0 0 0#427be6;
 }
-
-#dialog_div_estudios-2{
-    min-width: 400px;
-    max-height: auto;
-} */
 
 .span_fechas{
     color: rgb(134, 0, 0);
     box-shadow: 0 1px 4px 4px black;
     font-weight: 700;
-    padding: 1px;
+    padding: 2px;
     border-radius: 5%;
+    margin-left: 10px;
 }
 
-#fecha_elec{
-    position: relative;
-    top: 20px;
-    left: 250px;
-}
-
-#fecha_sis{
-    position: relative;
-    top: 75px;
-    left: 125px;
-}
-
-#fecha_tec{
-    position: relative;
-    top: 135px;
-    left: 55px;
-}
 
 .h2_estudios{
     width: fit-content;
     height: min-content;
     margin-left: 25px;
     font-weight: 900;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px blac  k;
     color: rgb(134, 0, 0);
     font-size: 32px;
 }
@@ -295,15 +276,6 @@ nav {
 
 .lista-1_detalles{
     background-color: #65666893;
-}
-
-.carrera_item{
-    width: fit-content;
-    text-decoration: underline;
-    margin-top: 0;
-    font-size: 17px;
-    color: #000000;
-    text-shadow: 0 0#427be6;
 }
 
 .lista_estudios-2{
@@ -442,6 +414,7 @@ nav {
     color:rgb(0, 0, 0);
     font-weight: 600;
     text-shadow: 0 0 15px white;
+    margin-left: 5px;
 }
 
 /*------- Fin Estudios -------*/
