@@ -226,29 +226,28 @@ nav {
 
 #div_estudios-0 {
     display: flex;
-    flex-direction: row;
-    max-width: 400px;
+    flex-direction: column;
+    gap: 100px;
+    min-width: 400px;
+    max-width: 500px;
+    height: auto;
     overflow-x: hidden;
 }
 
 .container_estudios{
-    width: min-content;
-    max-width: 90vw;
-    min-width: 400px;
-    height: min-content;
     padding: 10px 5px;
     user-select: none;
 }
 
-#dialog_div_estudios-1{
+/* #dialog_div_estudios-1{
     min-width: 400px;
-    max-height: 800px;
+    max-height: auto;
 }
 
 #dialog_div_estudios-2{
     min-width: 400px;
-    max-height: 800px;
-}
+    max-height: auto;
+} */
 
 .span_fechas{
     color: rgb(134, 0, 0);
@@ -260,19 +259,19 @@ nav {
 
 #fecha_elec{
     position: relative;
-    top: 2.7vh;
-    left: 265px;
+    top: 20px;
+    left: 250px;
 }
 
 #fecha_sis{
     position: relative;
-    top: 11.7vh;
-    left: 140px;
+    top: 75px;
+    left: 125px;
 }
 
 #fecha_tec{
     position: relative;
-    top: 19.7vh;
+    top: 135px;
     left: 55px;
 }
 
@@ -288,10 +287,14 @@ nav {
 
 .lista_estudios-1{
     list-style: none;
-    color: #031941;
-    text-shadow: 0 0 7px whitesmoke;
+    color: #ffffff;
+    text-shadow: 3px 3px 25px white;
     margin-top: 0;
     margin-left: -5px;
+}
+
+.lista-1_detalles{
+    background-color: #65666893;
 }
 
 .carrera_item{
@@ -299,6 +302,8 @@ nav {
     text-decoration: underline;
     margin-top: 0;
     font-size: 17px;
+    color: #000000;
+    text-shadow: 0 0#427be6;
 }
 
 .lista_estudios-2{
@@ -375,7 +380,7 @@ nav {
 .conocimiento_porcentaje{
     padding: 0 75px;
     position: absolute;
-    font-size: 0.8em;
+    font-size: 0.9em;
     left: 30%;
     opacity: 0;
     transition: 1.2s;
@@ -386,13 +391,13 @@ nav {
 }
 
 #ampliar_info, #reducir_info{
-    /* user-select: none; */
+    user-select: none;
     font-weight: 900;
     padding: 5px 25px;
     border-radius: 45%;
-    margin-left: 25%;
+    margin-left: 30%;
     box-shadow: 0 0 10px 2px #427be66e;
-    background-color: transparent;
+    background-color: #777;
     color: #1d0000;
     transition: 2s;
 }
@@ -408,6 +413,7 @@ nav {
 .container_estudios-detalles{
     display: none;
     opacity: 0;
+    overflow-y: hidden;
 }
 
 .container_estudios-detalles li p{
@@ -416,6 +422,26 @@ nav {
 
 .container_estudios-detalles h6{
     margin-bottom: 10px;
+}
+
+.lista-2_detalles p{
+    color: blue;
+    background-color: #d2d6e0;
+    margin-right: 5%;
+    border-radius: 7px;
+    padding: 2px 5px;
+    text-align: justify;
+}
+
+.lista-2_detalles h6{
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+#nota_estudios-2{
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    text-shadow: 0 0 15px white;
 }
 
 /*------- Fin Estudios -------*/
@@ -436,7 +462,6 @@ nav {
     flex-direction: column;
     width: 90%;
     align-items: center;
-    /* animation: desplazamiento1 2.5s ease-in-out 1s 2; */
 }
 
 .h3_expLaboral{
@@ -528,7 +553,6 @@ nav {
     color: rgb(0, 0, 0);
     text-shadow: 0 0 10px whitesmoke;
     font-weight: 700;
-    /* background-color: rgba(245, 245, 245, 0.39); */
     font-size: 18px;   
     width: fit-content;
     border-radius: 15px;

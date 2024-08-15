@@ -64,4 +64,5 @@ const boton_detalle_expLaboral = document.querySelector("#button-detalles_expLab
 boton_detalle_expLaboral.addEventListener("click", () => {
   const div_expLaboral = document.querySelector(".dialog_div_expLaboral");
   div_expLaboral.style.animation = "desplazamiento1 3s";
+  setTimeout( () => {div_expLaboral.style.animation = "none";},3500);
 })
