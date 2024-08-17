@@ -421,6 +421,7 @@ nav {
 
 /*--------- Exp Laboral --------*/
 
+
 #dialog_expLaboral{
     background: linear-gradient(to right,#427be6,#ffffff83);
     max-width: 80vw;
@@ -430,10 +431,16 @@ nav {
     overflow-x: hidden;
 }
 
+.exp_laboral_container{
+    display: grid;
+    grid-template-columns: 100% 100%;
+    gap: 50px;
+}
+
 .dialog_div_expLaboral{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     align-items: center;
 }
 
@@ -463,7 +470,7 @@ nav {
     max-width: 80%;
 }
 
-#button-detalles_expLaboral{
+#button-detalles_expLaboral, #button-detalles_expLaboral-2{
     background-color: #000000;
     box-shadow: 0 0 10px 1px blue;
     color: #ffffff83;
@@ -472,9 +479,17 @@ nav {
     transition: 2s;
 }
 
-#button-detalles_expLaboral:hover{
+#button-detalles_expLaboral:hover, #button-detalles_expLaboral-2:hover{
     font-size: 1.1em;
     text-shadow: 0 0 1px red;
+}
+
+
+/* ----  Detalles expLaboral ----*/
+
+.dialog_div_expLaboral-detalles{
+    display: none;
+    opacity: 0.5;
 }
 
 /*--------- Fin expLaboral ----------*/
@@ -489,8 +504,8 @@ nav {
     max-height: fit-content;
     overflow: hidden;
     overflow-x: hidden;
-
 }
+
 
 .dialog_div_proyectos{
     max-width: 90%;
@@ -591,14 +606,31 @@ footer {
 }
 
 
-/* Animaciones */
+/* ------------------------ Animaciones ----------------------------- */
 
 @keyframes desplazamiento1 {
-    to{
+    from{
         transform: translateX(0);
     }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes desp_izq {
     from{
-        transform: translateX(110%);
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes desp_der {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
     }
 }
 

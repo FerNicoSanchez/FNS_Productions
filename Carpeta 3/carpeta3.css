@@ -40,7 +40,6 @@ body{
     width: 30vw;
     top: 0;
     right: 0;
-    z-index: -10;
 }
 
 .header__nav-list{

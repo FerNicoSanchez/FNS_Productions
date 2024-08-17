@@ -62,7 +62,27 @@ reducir_info.addEventListener("click", () => {
 const boton_detalle_expLaboral = document.querySelector("#button-detalles_expLaboral");
 
 boton_detalle_expLaboral.addEventListener("click", () => {
-  const div_expLaboral = document.querySelector(".dialog_div_expLaboral");
-  div_expLaboral.style.animation = "desplazamiento1 3s";
-  setTimeout( () => {div_expLaboral.style.animation = "none";},3500);
+  const container = document.querySelector(".exp_laboral_container");
+  const div_detalles = document.querySelector(".dialog_div_expLaboral-detalles");
+  div_detalles.style.display = "block";
+  container.style.animation = "desp_izq 4s forwards";
+
+  //Opcion alternativa
+  // const div_expLaboral = document.querySelector(".dialog_div_expLaboral");
+  // div_expLaboral.style.animation = "desplazamiento1 3s";
+  // setTimeout( () => {
+  //   div_expLaboral.style.animation = "none";
+  //   div_expLaboral.style.display = "none";
+  // },3500);
+})
+
+const boton_resumen_expLaboral = document.querySelector("#button-detalles_expLaboral-2");
+
+boton_resumen_expLaboral.addEventListener("click", () => {
+  const container = document.querySelector(".exp_laboral_container");
+  const div_detalles = document.querySelector(".dialog_div_expLaboral-detalles");
+  container.style.animation = "desp_der 4s";
+  setTimeout( () => {
+    div_detalles.style.display = "none";
+  },4100)
 })
