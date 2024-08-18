@@ -204,12 +204,13 @@ nav {
 .dialog__button{
     color: red;
     position: absolute;
-    top: 14px;
+    top: 18px;
     right: 0;
     box-shadow: 0 0 5px 1.2px #0000002d;
     text-shadow: 0 0 3px #9e3e3e;
     border-radius: 30%;
 }
+
 
 /* ----------- Estudios ------------*/
 
@@ -422,6 +423,16 @@ nav {
 /*--------- Exp Laboral --------*/
 
 
+.boton_x_expLaboral1{
+    right: 20px;
+}
+
+.boton_x_expLaboral2{
+    position: absolute;
+    top: 0;
+    right: -80%;
+}
+
 #dialog_expLaboral{
     background: linear-gradient(to right,#427be6,#ffffff83);
     max-width: 80vw;
@@ -489,7 +500,7 @@ nav {
 
 .dialog_div_expLaboral-detalles{
     display: none;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 /*--------- Fin expLaboral ----------*/
@@ -504,6 +515,7 @@ nav {
     max-height: fit-content;
     overflow: hidden;
     overflow-x: hidden;
+    animation: sinFondo 5s;
 }
 
 
@@ -653,5 +665,17 @@ footer {
     }
     100%{
         opacity: 1;
+    }
+}
+
+@keyframes sinFondo {
+    0%{
+        background: url(Imagenes/proyectos_oscuro1.jpeg);
+    }
+    50%{
+        background: none;
+    }
+    100%{
+        background: linear-gradient(to right,rgb(63, 54, 54),rgba(255, 255, 255, 0.658));
     }
 }
