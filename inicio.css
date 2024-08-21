@@ -101,7 +101,6 @@ nav {
     flex-direction: row;
     background: url(Imagenes/foto_ig_campera.jpg);
     background-size: contain;
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     margin: auto;
     margin-left: 3%;
@@ -459,20 +458,20 @@ nav {
     text-shadow: 0 0 7px whitesmoke;
 }
 
-#tabla_expLaboral td:first-child{
+.tabla_expLaboral td:first-child{
     text-align: balance;
     text-shadow: 0 0 1px red;
     padding-right: 50px;
 }
 
-#tabla_expLaboral h5{
+.tabla_expLaboral h5{
     font-size: 18px;
     text-shadow: none;
     margin-bottom: 1px;
     margin-top: 10px;
 }
 
-#tabla_expLaboral td:last-child{
+.tabla_expLaboral td:last-child{
     text-align: justify;
     text-shadow: 0 0 1px red;
 }
@@ -501,6 +500,19 @@ nav {
 .dialog_div_expLaboral-detalles{
     display: none;
     opacity: 0.8;
+}
+
+.tabla_expLaboral-detalles{
+    width: 85%;
+}
+
+.tabla_expLaboral-detalles h5{
+    text-align: center;
+}
+
+.tabla_expLaboral-detalles p{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px black;
 }
 
 /*--------- Fin expLaboral ----------*/
