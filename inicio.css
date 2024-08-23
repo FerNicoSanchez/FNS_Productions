@@ -434,7 +434,7 @@ nav {
 
 #dialog_expLaboral{
     background: linear-gradient(to right,#427be6,#0e090985);
-    max-width: 80vw;
+    max-width: 85vw;
     min-width: 340px;
     height: fit-content;
     box-shadow: 0 0 3px 0 black;
@@ -444,7 +444,7 @@ nav {
 .exp_laboral_container{
     display: grid;
     grid-template-columns: 100% 100%;
-    gap: 100px;
+    gap: 30px;
 }
 
 .dialog_div_expLaboral{
@@ -503,7 +503,7 @@ nav {
 }
 
 .tabla_expLaboral-detalles{
-    width: 85%;
+    width: 90%;
 }
 
 .tabla_expLaboral-detalles h5{
