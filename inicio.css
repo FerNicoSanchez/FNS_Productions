@@ -433,7 +433,7 @@ nav {
 }
 
 #dialog_expLaboral{
-    background: linear-gradient(to right,#427be6,#ffffff83);
+    background: linear-gradient(to right,#427be6,#0e090985);
     max-width: 80vw;
     min-width: 340px;
     height: fit-content;
@@ -444,7 +444,7 @@ nav {
 .exp_laboral_container{
     display: grid;
     grid-template-columns: 100% 100%;
-    gap: 50px;
+    gap: 100px;
 }
 
 .dialog_div_expLaboral{
@@ -515,6 +515,11 @@ nav {
     text-shadow: 0 0 10px black;
 }
 
+.p_expLaboral{
+    text-shadow: 0 0 15px white;
+    font-weight: 700;
+}
+
 /*--------- Fin expLaboral ----------*/
 
 /* ----------- Proyectos -----------*/
@@ -525,7 +530,7 @@ nav {
     max-height: fit-content;
     overflow: hidden;
     overflow-x: hidden;
-    animation: aparecer 1s forwards;
+    animation: aparecer .7s forwards;
 }
 
 
@@ -548,11 +553,11 @@ nav {
 }
 
 #lista_proyectos h3{
-    margin-left: 25%;
+    margin-left: 20%;
     font-size: 24px;
     border-radius: 30px;
     text-align: center;
-    width: 45%;
+    width: 55%;
     color: rgb(177, 42, 170);
     box-shadow: 0 0 10px 0 black;
     background: linear-gradient(to right,rgba(37, 37, 37, 0.747),rgb(194, 184, 184));
@@ -568,6 +573,20 @@ nav {
     border-radius: 15px;
 }
 
+#lista_proyectos a{
+    margin-left: 30dvw;
+    background-color: #000000c5;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 0 2px 0 black;
+}
+
+#lista_proyectos a:hover{
+    background-color: #1d0000;
+}
 
 /*  ************* Fin Dialogs section 2 ****************** */
 

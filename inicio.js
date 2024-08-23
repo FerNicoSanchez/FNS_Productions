@@ -86,3 +86,12 @@ boton_resumen_expLaboral.addEventListener("click", () => {
     div_detalles.style.display = "none";
   },4100)
 })
+
+const temporal_proyectos = document.querySelectorAll(".ir_al_proyecto");
+
+temporal_proyectos.forEach(a => {
+  a.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("Proximamente...\nLa APP ya fue creada y se esta trabajando en los videos tutoriales.")
+  })
+})
