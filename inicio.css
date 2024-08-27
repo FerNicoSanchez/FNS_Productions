@@ -127,7 +127,7 @@ nav {
 
 @media (min-width: 780px) {
     #div-1_section_1 {
-        min-height: 900px;
+        height: auto;
     }
 
     #p_section-1{
@@ -137,7 +137,7 @@ nav {
         font-size: 24px;
         font-weight: 700;
         margin-left: clamp(41%,46%,49%);
-        margin-right: clamp(10vw,11vw,12vw);
+        margin-right: 5vw;
         margin-top: 12%;
         padding: 2%;
         color: rgb(255, 255, 255);
@@ -241,7 +241,7 @@ nav {
 .carrera_item{
     width: fit-content;
     margin-top: 0;
-    font-size: 17px;
+    font-size: 18px;
     color: #000000;
     text-shadow: 0 0 0#427be6;
 }
@@ -253,6 +253,12 @@ nav {
     padding: 2px;
     border-radius: 5%;
     margin-left: 10px;
+}
+
+@media (max-width: 600px){
+    .span_fechas{
+        display: none;
+    }
 }
 
 
@@ -414,7 +420,7 @@ nav {
     color:rgb(0, 0, 0);
     font-weight: 600;
     text-shadow: 0 0 15px white;
-    margin-left: 5px;
+    margin: 0 15px;
 }
 
 /*------- Fin Estudios -------*/
@@ -518,6 +524,8 @@ nav {
 .p_expLaboral{
     text-shadow: 0 0 15px white;
     font-weight: 700;
+    padding-right: 20px;
+    margin-right: 50px;
 }
 
 /*--------- Fin expLaboral ----------*/
@@ -573,8 +581,13 @@ nav {
     border-radius: 15px;
 }
 
+.ir_al_proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #lista_proyectos a{
-    margin-left: 30dvw;
     background-color: #000000c5;
     color: whitesmoke;
     padding: 5px 10px;
@@ -587,6 +600,7 @@ nav {
 #lista_proyectos a:hover{
     background-color: #1d0000;
 }
+
 
 /*  ************* Fin Dialogs section 2 ****************** */
 
