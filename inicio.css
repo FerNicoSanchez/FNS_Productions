@@ -610,6 +610,12 @@ nav {
     align-items: center;
 }
 
+.ir_al_proyecto_ok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #lista_proyectos a{
     background-color: #000000c5;
     color: whitesmoke;
