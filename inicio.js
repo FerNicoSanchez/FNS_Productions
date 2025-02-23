@@ -3,6 +3,42 @@ function toggleMenu() {
   navLinks.classList.toggle('active');
 }
 
+// Registro de Descargas de CV
+
+function actualizarBBDD_cv() {
+  const optionFecha = { year: 'numeric' , month: '2-digit' , day: '2-digit'};
+  const optionHora = { hour: '2-digit', minute: '2-digit', second: '2-digit'};
+
+  const now = new Date();
+
+  const date = new Intl.DateTimeFormat('es-AR', optionFecha).format(now);
+  const time = new Intl.DateTimeFormat('es-AR', optionHora).format(now);
+
+  
+  const data = { 
+    fecha: date, 
+    hora: time
+  };
+  
+  console.log("Fecha:", data.fecha);
+  console.log("Hora:", data.hora);
+
+  fetch('https://script.google.com/macros/s/AKfycbwLaJNxtQwBHxVrvE06xjygJImXu4AGpf46Qrfw9HowZTrbupPZQq_CCcmrD37xkH-rSg/exec', {
+      method: 'POST',
+      mode:  'no-cors',
+      headers: {
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+      })
+      .then((response) => response.json())
+      .catch((error) => {
+      console.log("Error: " + error);
+      });
+
+  window.open('fernando_sanchez_2025.pdf', '_blank');
+};
+
 // Informacion en dialogs.
 
 const img_estudios = document.getElementById("image_estudios");
