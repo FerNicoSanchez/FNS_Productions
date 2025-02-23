@@ -15,15 +15,15 @@
 			<div class="logo">FNS Productions</div>
 			<ul class="nav-links">
 			<li>
-				<a
+				<!-- <a
 					href="https://fernicosanchez.github.io/FNS_Productions/"
 					title="Volver al inicio"
 					>
 					Inicio
-				</a>
+				</a> -->
 			</li>
-			<li><a href="Carpeta 2/" title="Abrir comunidad fútbol"> Comunidad Fútbol </a></li>
-			<li><a href="Carpeta 3/" title="Abrir carpeta 3"> Carpeta 3 </a></li>
+			<li><a href="Carpeta 2/" target="_blank" title="Abrir comunidad fútbol"> Comunidad Fútbol </a></li>
+			<!-- <li><a href="Carpeta 3/" title="Abrir carpeta 3"> Carpeta 3 </a></li> -->
 			</ul>
 			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
 		</nav>
@@ -35,37 +35,38 @@
 					<img id="img_inicial" src="Imagenes/foto_ig_campera.jpg"></img>
 				</div>
 				<div id="div_parrafo_section_1">
-					<p id="p_section-1">¡Hola! Mi nombre es Fernando Nicolás Sánchez, soy desarrollador de tecnologías, principalmente de software,
-                        siendo la programación, la herramienta que más utilizo. Mi fuerte es el backend, mi orientación es full stack, he realizado
-						desarrollo de páginas web, como también de aplicaciones. Estoy estudiando Ingeniería
-                        Electrónica e Ingeniería en Sistemas de Información, ambas en la UTN. El propósito de este sitio es mostrar quien soy y
-                        como trabajo. Para conocer más detalles te invito a revisar la página, si es de interés, 
-                        podrán comunicarse conmigo en cualquiera de mis redes sociales que se encuentran al pie de la misma.
+					<p id="p_section-1">
+						¡Hola! Mi nombre es <span style="font-weight:bolder; text-shadow: 1px 1px 5px red;">Fernando Nicolás Sánchez</span>, soy 
+						<span style="font-weight:bolder; text-shadow: 1px 1px 5px red;">desarrollador de software</span>. Mi fuerte es la programación, tengo amplios
+						conocimientos como analista de datos, utilizando SQL como también hojas de cálculo (Google Sheets y Excel). Estoy 
+						estudiando Ingeniería Electrónica e Ingeniería en Sistemas de Información, ambas en la UTN. Podrán comunicarse conmigo 
+						en cualquiera de mis redes sociales que se encuentran al pie de esta página.
 					</p>
+					<div id="descargar_cv" onclick="window.open('fernando_sanchez_2025.pdf', '_blank')">
+						<p id="p_cv">Ver CV</p>
+					</div>
+					<div id="container__section-2">
+						<div id="div-2_section_2" class="div_section">
+							<a class="image-container">
+								<img id="image_estudios" class="image-container" src="Imagenes/estudios2_portfolio.jpeg">
+								<div class="overlay-text">Estudios y Conocimientos</div>
+							</a>
+						</div>
+						<div id="div-2_section_2" class="div_section ">
+							<a class="image-container">
+								<img id="image_expLaboral" class="image-container" src="Imagenes/ExpLaboral1.jpeg">
+								<div class="overlay-text">Experiencia Laboral</div>
+							</a>
+						</div>
+						<div id="div-3_section_2" class="div_section">
+							<a class="image-container">
+								<img id="image_proyectos" class="image-container" src="Imagenes/Proyectos1.jpeg">
+								<div class="overlay-text">Proyectos</div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>	
-		</section>
-		<section id="section_2">
-				<div id="container__section-2">
-					<div id="div-2_section_2" class="div_section">
-						<a class="image-container">
-							<img id="image_estudios" class="image-container" src="Imagenes/estudios2_portfolio.jpeg">
-							<div class="overlay-text">Estudios y Conocimientos</div>
-						</a>
-					</div>
-					<div id="div-2_section_2" class="div_section ">
-						<a class="image-container">
-							<img id="image_expLaboral" class="image-container" src="Imagenes/ExpLaboral1.jpeg">
-							<div class="overlay-text">Experiencia Laboral</div>
-						</a>
-					</div>
-					<div id="div-3_section_2" class="div_section">
-						<a class="image-container">
-							<img id="image_proyectos" class="image-container" src="Imagenes/Proyectos1.jpeg">
-							<div class="overlay-text">Proyectos</div>
-						</a>
-					</div>
-				</div>
 		</section>
 		<dialog id="dialog_estudios">
 			<div id="div_estudios-0">
@@ -491,7 +492,7 @@
 								prácticas para la organización.
 							</p>
 							<div class="ir_al_proyecto_ok">
-								<a href="Carpeta 2/">Ir al Proyecto</a>
+								<a href="Carpeta 2/" target="_blank">Ir al Proyecto</a>
 							</div>
 						</li>
 						<li>
