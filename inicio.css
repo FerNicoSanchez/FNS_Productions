@@ -127,10 +127,26 @@ nav {
     padding: 5%;
 }
 
+#descargar_cv {
+    margin: 4% 10%;
+    padding: 1%;
+    width: 40%;
+    background-color: #00000098;
+    color: white;
+    box-shadow: 0 0 10px red;
+    border-radius: 15% 15%;
+}
+
+#p_cv {
+    font-size: 30px;
+    font-weight: 900;
+    margin: auto;
+    padding: auto;
+}
+
 
 @media (min-width: 780px) {
     #div-1_section_1 {
-        /* height: auto; */
         display: flex;
         flex-direction: row;
     }
